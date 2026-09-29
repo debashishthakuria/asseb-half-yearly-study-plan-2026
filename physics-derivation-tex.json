@@ -1,0 +1,36 @@
+{
+  "electric-charges-fields": [
+    ["Choose a closed coaxial cylinder of radius r and length L around an effectively infinite, uniformly charged line. The field is radial and constant on the curved side; end-cap flux is zero.", "\\oint \\mathbf{E}\\cdot d\\mathbf{A}=E(2\\pi rL)=\\frac{\\lambda L}{\\varepsilon_0}"],
+    ["Cancel L to obtain the field magnitude. Its direction is outward for positive line charge and inward for negative charge.", "E=\\frac{|\\lambda|}{2\\pi\\varepsilon_0 r}"]
+  ],
+  "potential-capacitance": [
+    ["Take two large plates of area A, separation d and charges ±Q. Neglect fringing; between the plates the fields of the two sheets add.", "E=\\frac{\\sigma}{\\varepsilon_0}=\\frac{Q}{\\varepsilon_0 A}"],
+    ["The potential difference is field times separation. Substitute it into the definition of capacitance.", "V=Ed=\\frac{Qd}{\\varepsilon_0 A}", "C=\\frac{Q}{V}=\\frac{\\varepsilon_0 A}{d}"],
+    ["If a dielectric completely fills the gap, replace vacuum permittivity by its dielectric value.", "C=\\frac{\\kappa\\varepsilon_0 A}{d}"]
+  ],
+  "current-electricity": [
+    ["In the simple Drude model, an electron's mean drift-speed magnitude depends on the mean time τ between collisions.", "v_d=\\frac{eE\\tau}{m}"],
+    ["Use carrier density n, cross-section A and the approximately uniform field along length L.", "I=neAv_d=\\frac{ne^2 A\\tau}{m}E", "E=\\frac{V}{L}"],
+    ["Combine the equations, then compare with Ohm’s law to read off resistance and resistivity.", "I=\\frac{ne^2 A\\tau}{mL}V", "R=\\frac{mL}{ne^2 A\\tau}", "\\rho=\\frac{m}{ne^2\\tau}"]
+  ],
+  "moving-charges-magnetism": [
+    ["Choose a circular Amperian path of radius r around an effectively infinite, straight wire. By symmetry, the magnetic field is tangent to the circle and has constant magnitude.", "\\oint\\mathbf{B}\\cdot d\\boldsymbol{\\ell}=B(2\\pi r)=\\mu_0 I"],
+    ["Solve for B; use the right-hand grip rule for its direction.", "B=\\frac{\\mu_0 I}{2\\pi r}"]
+  ],
+  "magnetism-matter": [
+    ["For a small current loop in a uniform field, opposite forces make a couple: net force is zero, but torque is not. For one turn:", "\\tau=IAB\\sin\\theta"],
+    ["For N turns, define magnetic dipole moment and write the resulting aligning torque.", "m=NIA", "\\tau=mB\\sin\\theta"]
+  ],
+  "electromagnetic-induction": [
+    ["A straight conducting rod of length ℓ moves perpendicular to a uniform magnetic field. Charges feel a magnetic force until the electric force from separation balances it.", "qE=qvB", "E=vB"],
+    ["Multiply the field by the rod length to find the magnitude of the induced end-to-end emf. A current needs a closed circuit.", "|\\varepsilon|=E\\ell=B\\ell v"]
+  ],
+  "alternating-current": [
+    ["Take the series-circuit current as phase reference. Resistor voltage is in phase; inductor voltage leads and capacitor voltage lags by 90°. Thus the reactive voltages subtract as phasors.", "V_{\\mathrm{rms}}^2=(I_{\\mathrm{rms}}R)^2+[I_{\\mathrm{rms}}(X_L-X_C)]^2"],
+    ["Divide by the current to obtain the impedance. At resonance the reactances cancel.", "Z=\\frac{V_{\\mathrm{rms}}}{I_{\\mathrm{rms}}}=\\sqrt{R^2+(X_L-X_C)^2}", "X_L=X_C\\quad\\Longrightarrow\\quad Z=R"]
+  ],
+  "electromagnetic-waves": [
+    ["Two surfaces can share the same boundary loop: one cuts a charging wire and the other bulges between capacitor plates. The latter encloses no conduction current, so Ampère’s original law alone gives conflicting answers.", "I_d=\\varepsilon_0\\frac{d\\Phi_E}{dt}"],
+    ["For ideal plates, electric flux is proportional to the charge. Hence the displacement current between the plates equals the wire current.", "\\Phi_E=EA=\\frac{Q}{\\varepsilon_0}", "I_d=\\frac{dQ}{dt}=I"]
+  ]
+}

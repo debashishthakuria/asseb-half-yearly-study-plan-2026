@@ -4,4 +4,5 @@
 .equation{display:flex;flex-wrap:wrap;align-items:center;gap:8px 25px;overflow-x:visible;white-space:normal;font-size:18px;line-height:1.7;padding:9px 0}
 .math-line{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:3px 0}
 .math-line .katex{font-size:1.1em;white-space:nowrap}
-@media(max-width:600px){.equation{font-size:16px;gap:8px 16px}.math-line .katex{font-size:1.06em}}
+.derivation-steps{background:var(--tint);border-radius:8px;padding:14px 16px}.derivation-step{padding:8px 0;border-top:1px solid var(--border)}.derivation-step:first-child{border-top:0}.derivation-step p{margin:0 0 9px;color:var(--ink)}.derivation-step .math-line{display:block;font-size:18px;line-height:1.6;padding:5px 0}
+@media(max-width:600px){.equation{font-size:16px;gap:8px 16px}.math-line .katex{font-size:1.06em}.derivation-step .math-line{font-size:16px}}
