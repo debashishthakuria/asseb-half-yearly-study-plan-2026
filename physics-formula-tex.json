@@ -1,0 +1,55 @@
+{
+  "electric-charges-fields": [
+    ["F = k\\frac{|q_1q_2|}{r^2}", "k = \\frac{1}{4\\pi\\varepsilon_0}"],
+    ["E = \\frac{F}{q_0}", "E = k\\frac{|q|}{r^2}"],
+    ["\\Phi_E = \\int \\mathbf{E}\\cdot d\\mathbf{A}", "\\oint \\mathbf{E}\\cdot d\\mathbf{A} = \\frac{Q_{\\mathrm{enc}}}{\\varepsilon_0}"],
+    ["p = q(2a)", "\\tau = pE\\sin\\theta"],
+    ["E_{\\mathrm{line}} = \\frac{\\lambda}{2\\pi\\varepsilon_0r}", "E_{\\mathrm{sheet}} = \\frac{\\sigma}{2\\varepsilon_0}"]
+  ],
+  "potential-capacitance": [
+    ["V = k\\frac{q}{r}", "\\Delta U = q\\Delta V"],
+    ["E_r = -\\frac{dV}{dr}"],
+    ["C = \\frac{Q}{V}", "C_{\\mathrm{plate}} = \\frac{\\varepsilon_0 A}{d}"],
+    ["C_{\\parallel} = \\sum_i C_i", "\\frac{1}{C_{\\mathrm{series}}} = \\sum_i \\frac{1}{C_i}"],
+    ["U = \\frac{1}{2}CV^2 = \\frac{Q^2}{2C} = \\frac{1}{2}QV"]
+  ],
+  "current-electricity": [
+    ["I = neAv_d", "J = \\frac{I}{A}"],
+    ["V = IR", "R = \\rho\\frac{L}{A}"],
+    ["P = VI = I^2R = \\frac{V^2}{R}"],
+    ["V_{\\mathrm{terminal}} = \\varepsilon - Ir"],
+    ["\\frac{P}{Q} = \\frac{R}{S}"]
+  ],
+  "moving-charges-magnetism": [
+    ["\\mathbf{F} = q(\\mathbf{v}\\times\\mathbf{B})", "|F| = |q|vB\\sin\\theta"],
+    ["r = \\frac{mv}{|q|B}", "T = \\frac{2\\pi m}{|q|B}"],
+    ["B_{\\mathrm{wire}} = \\frac{\\mu_0 I}{2\\pi r}", "B_{\\mathrm{loop}} = \\frac{\\mu_0 NI}{2R}"],
+    ["\\oint \\mathbf{B}\\cdot d\\boldsymbol{\\ell} = \\mu_0 I_{\\mathrm{enc}}", "B_{\\mathrm{solenoid}} \\approx \\mu_0 nI"],
+    ["m = NIA", "\\tau = mB\\sin\\theta"]
+  ],
+  "magnetism-matter": [
+    ["\\tau = mB\\sin\\theta", "U = -\\mathbf{m}\\cdot\\mathbf{B}"],
+    ["\\oint \\mathbf{B}\\cdot d\\mathbf{A} = 0"],
+    ["M = \\chi_m H", "B = \\mu_0(H+M)"],
+    ["B_H = B\\cos\\delta", "B_V = B\\sin\\delta"]
+  ],
+  "electromagnetic-induction": [
+    ["\\Phi_B = BA\\cos\\theta"],
+    ["\\varepsilon = -N\\frac{d\\Phi_B}{dt}"],
+    ["\\varepsilon = B\\ell v"],
+    ["\\varepsilon_L = -L\\frac{dI}{dt}", "U_L = \\frac{1}{2}LI^2"]
+  ],
+  "alternating-current": [
+    ["V_{\\mathrm{rms}} = \\frac{V_0}{\\sqrt{2}}", "I_{\\mathrm{rms}} = \\frac{I_0}{\\sqrt{2}}"],
+    ["X_L = \\omega L", "X_C = \\frac{1}{\\omega C}", "\\omega = 2\\pi f"],
+    ["Z = \\sqrt{R^2+(X_L-X_C)^2}", "I_{\\mathrm{rms}} = \\frac{V_{\\mathrm{rms}}}{Z}"],
+    ["\\omega_0 = \\frac{1}{\\sqrt{LC}}", "f_0 = \\frac{1}{2\\pi\\sqrt{LC}}"],
+    ["P_{\\mathrm{avg}} = V_{\\mathrm{rms}}I_{\\mathrm{rms}}\\cos\\phi", "\\frac{V_s}{V_p} = \\frac{N_s}{N_p}"]
+  ],
+  "electromagnetic-waves": [
+    ["c = \\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}} \\approx 3\\times 10^8\\,\\mathrm{m/s}"],
+    ["\\frac{E_0}{B_0} = c"],
+    ["I_d = \\varepsilon_0\\frac{d\\Phi_E}{dt}"],
+    ["I_{\\mathrm{avg}} = \\frac{1}{2}\\varepsilon_0cE_0^2"]
+  ]
+}

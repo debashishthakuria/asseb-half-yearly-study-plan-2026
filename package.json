@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build:formulas": "node render-physics-formulas.js",
+    "build:physics": "python C:/Users/debas/build_physics_revision.py"
+  },
+  "devDependencies": {
+    "katex": "0.18.9"
+  }
+}
