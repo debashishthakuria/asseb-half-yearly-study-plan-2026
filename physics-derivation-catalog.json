@@ -1,0 +1,1996 @@
+{
+  "electric-charges-fields": [
+    {
+      "title": "Coulomb force in vector form",
+      "source": "NCERT Part I PDF pp. 14–15",
+      "steps": [
+        [
+          "For charges at position vectors, write separation and its unit vector.",
+          "\\mathbf r_{12}=\\mathbf r_1-\\mathbf r_2",
+          "\\hat{\\mathbf r}_{12}=\\mathbf r_{12}/r_{12}"
+        ],
+        [
+          "Apply inverse-square Coulomb law.",
+          "\\mathbf F_{12}=\\dfrac{q_1q_2}{4\\pi\\varepsilon_0r_{12}^{2}}\\hat{\\mathbf r}_{12}"
+        ],
+        [
+          "Result",
+          "\\mathbf F_{12}=\\dfrac{q_1q_2}{4\\pi\\varepsilon_0}\\dfrac{\\mathbf r_{12}}{r_{12}^{3}}"
+        ]
+      ],
+      "caveats": "STATED THEN REWRITTEN: Empirical law, not a first-principles derivation; point charges at rest in vacuum."
+    },
+    {
+      "title": "Superposition of electrostatic forces",
+      "source": "NCERT Part I PDF pp. 19–20",
+      "steps": [
+        [
+          "Apply Coulomb law separately to every source charge.",
+          "\\mathbf F_{1i}=\\dfrac{q_1q_i}{4\\pi\\varepsilon_0r_{1i}^{2}}\\hat{\\mathbf r}_{1i}"
+        ],
+        [
+          "Vector-add contributions.",
+          "\\mathbf F_1=\\mathbf F_{12}+\\mathbf F_{13}+\\cdots+\\mathbf F_{1n}"
+        ],
+        [
+          "Result",
+          "\\mathbf F_1=\\dfrac{q_1}{4\\pi\\varepsilon_0}\\sum_{i=2}^{n}\\dfrac{q_i\\hat{\\mathbf r}_{1i}}{r_{1i}^{2}}"
+        ]
+      ],
+      "caveats": "Superposition itself is experimentally verified, not proved from Coulomb law alone; NCERT Eq. 1.5."
+    },
+    {
+      "title": "Electric field of a point charge",
+      "source": "NCERT Part I PDF pp. 22–23",
+      "steps": [
+        [
+          "Divide Coulomb force on a test charge by that charge.",
+          "\\mathbf F=\\dfrac{Qq}{4\\pi\\varepsilon_0r^{2}}\\hat{\\mathbf r}",
+          "\\mathbf E=\\lim_{q\\to0}\\dfrac{\\mathbf F}{q}"
+        ],
+        [
+          "Result",
+          "\\mathbf E=\\dfrac{Q}{4\\pi\\varepsilon_0r^{2}}\\hat{\\mathbf r}"
+        ]
+      ],
+      "caveats": "For an ideal point source and undisturbing test charge; field points inward for Q<0."
+    },
+    {
+      "title": "Field due to several point charges",
+      "source": "NCERT Part I PDF pp. 23–24",
+      "steps": [
+        [
+          "Find each individual field at observation point P.",
+          "\\mathbf E_i=\\dfrac{q_i}{4\\pi\\varepsilon_0r_{iP}^{2}}\\hat{\\mathbf r}_{iP}"
+        ],
+        [
+          "Use vector superposition.",
+          "\\mathbf E(P)=\\mathbf E_1+\\cdots+\\mathbf E_n"
+        ],
+        [
+          "Result",
+          "\\mathbf E(P)=\\dfrac{1}{4\\pi\\varepsilon_0}\\sum_{i=1}^{n}\\dfrac{q_i\\hat{\\mathbf r}_{iP}}{r_{iP}^{2}}"
+        ]
+      ],
+      "caveats": "Do not add field magnitudes unless collinear; NCERT Eq. 1.10."
+    },
+    {
+      "title": "Electric flux through a plane and curved surface",
+      "source": "NCERT Part I PDF pp. 29–31",
+      "steps": [
+        [
+          "Project area onto plane normal to field.",
+          "\\Delta\\phi=E\\,\\Delta S\\cos\\theta=\\mathbf E\\cdot\\Delta\\mathbf S"
+        ],
+        [
+          "Sum infinitesimal surface elements.",
+          "\\phi\\simeq\\sum_i\\mathbf E_i\\cdot\\Delta\\mathbf S_i"
+        ],
+        [
+          "Result",
+          "\\phi=\\int_S\\mathbf E\\cdot d\\mathbf S"
+        ]
+      ],
+      "caveats": "For a closed surface normals point outward; textbook gives limiting sum and mentions integral, not a separate integral derivation."
+    },
+    {
+      "title": "Electric field on dipole axis",
+      "source": "NCERT Part I PDF pp. 31–32",
+      "steps": [
+        [
+          "At axial distance r from centre on positive-charge side, subtract opposing fields.",
+          "\\mathbf E=\\dfrac{q}{4\\pi\\varepsilon_0}\\left[\\dfrac{1}{(r-a)^2}-\\dfrac{1}{(r+a)^2}\\right]\\hat{\\mathbf p}"
+        ],
+        [
+          "Combine fractions and put p=2qa.",
+          "\\mathbf E=\\dfrac{4qar}{4\\pi\\varepsilon_0(r^2-a^2)^2}\\hat{\\mathbf p}=\\dfrac{2pr}{4\\pi\\varepsilon_0(r^2-a^2)^2}\\hat{\\mathbf p}"
+        ],
+        [
+          "Neglect a² against r² for far field.",
+          "\\mathbf E\\simeq\\dfrac{2p}{4\\pi\\varepsilon_0r^3}\\hat{\\mathbf p}"
+        ],
+        [
+          "Result",
+          "\\mathbf E_{\\rm axial}=\\dfrac{2pr}{4\\pi\\varepsilon_0(r^2-a^2)^2}\\hat{\\mathbf p}\\quad(r>a)"
+        ]
+      ],
+      "caveats": "Far-field form requires r≫a; exact expression given for r>a on positive side. Point-dipole limit exact for r>0."
+    },
+    {
+      "title": "Electric field on dipole equatorial plane",
+      "source": "NCERT Part I PDF pp. 31–32",
+      "steps": [
+        [
+          "Equal charge-field magnitudes have cancelling transverse components; axial components reinforce opposite p.",
+          "E_+=E_-=\\dfrac{q}{4\\pi\\varepsilon_0(r^2+a^2)}",
+          "\\cos\\theta=\\dfrac{a}{\\sqrt{r^2+a^2}}"
+        ],
+        [
+          "Resolve components and substitute p=2qa.",
+          "\\mathbf E=-2E_+\\cos\\theta\\,\\hat{\\mathbf p}=-\\dfrac{p}{4\\pi\\varepsilon_0(r^2+a^2)^{3/2}}\\hat{\\mathbf p}"
+        ],
+        [
+          "Take r≫a.",
+          "\\mathbf E\\simeq-\\dfrac{p}{4\\pi\\varepsilon_0r^3}\\hat{\\mathbf p}"
+        ],
+        [
+          "Result",
+          "\\mathbf E_{\\rm equatorial}=-\\dfrac{p}{4\\pi\\varepsilon_0(r^2+a^2)^{3/2}}\\hat{\\mathbf p}"
+        ]
+      ],
+      "caveats": "Far-field expression requires r≫a; point-dipole limit exact outside origin."
+    },
+    {
+      "title": "Torque on dipole in uniform electric field",
+      "source": "NCERT Part I PDF pp. 35",
+      "steps": [
+        [
+          "Forces ±qE cancel as a net force but form a couple of arm 2a sinθ.",
+          "F_{\\rm net}=0",
+          "\\tau=qE(2a\\sin\\theta)=pE\\sin\\theta"
+        ],
+        [
+          "Use right-hand-rule direction.",
+          "\\boldsymbol\\tau=\\mathbf p\\times\\mathbf E"
+        ],
+        [
+          "Result",
+          "\\boldsymbol\\tau=\\mathbf p\\times\\mathbf E"
+        ]
+      ],
+      "caveats": "Permanent dipole and spatially uniform E; nonuniform field can exert net force."
+    },
+    {
+      "title": "Field of a continuous volume charge distribution",
+      "source": "NCERT Part I PDF pp. 36–37",
+      "steps": [
+        [
+          "Replace small volume element by charge ρΔV and apply Coulomb law.",
+          "\\Delta q=\\rho(\\mathbf r)\\Delta V",
+          "\\Delta\\mathbf E=\\dfrac{\\rho(\\mathbf r)\\Delta V}{4\\pi\\varepsilon_0r^{\\prime2}}\\hat{\\mathbf r}^{\\prime}"
+        ],
+        [
+          "Sum all element fields; infinitesimal limit is an integral.",
+          "\\mathbf E(P)\\simeq\\dfrac{1}{4\\pi\\varepsilon_0}\\sum\\dfrac{\\rho\\Delta V\\hat{\\mathbf r}^{\\prime}}{r^{\\prime2}}"
+        ],
+        [
+          "Result",
+          "\\mathbf E(P)=\\dfrac{1}{4\\pi\\varepsilon_0}\\int\\dfrac{\\rho(\\mathbf r)\\hat{\\mathbf r}^{\\prime}}{r^{\\prime2}}\\,dV"
+        ]
+      ],
+      "caveats": "NCERT Eq. 1.27 explicitly stops at approximate sum; integral is limiting notation, not evaluated."
+    },
+    {
+      "title": "Flux of central point charge through a sphere",
+      "source": "NCERT Part I PDF pp. 37–38",
+      "steps": [
+        [
+          "Central point charge gives radial constant field on a concentric sphere.",
+          "E=\\dfrac{q}{4\\pi\\varepsilon_0r^2}",
+          "\\Delta\\phi=E\\Delta S"
+        ],
+        [
+          "Sum areas of the sphere.",
+          "\\phi=E\\sum\\Delta S=\\dfrac{q}{4\\pi\\varepsilon_0r^2}(4\\pi r^2)"
+        ],
+        [
+          "Result",
+          "\\phi=\\dfrac{q}{\\varepsilon_0}"
+        ]
+      ],
+      "caveats": "Illustrates Gauss law only for central charge and spherical surface."
+    },
+    {
+      "title": "Gauss law for an arbitrary closed surface",
+      "source": "NCERT Part I PDF pp. 38",
+      "steps": [
+        [
+          "NCERT states this generalization without proof.",
+          "\\phi=\\oint_S\\mathbf E\\cdot d\\mathbf S"
+        ],
+        [
+          "Result",
+          "\\oint_S\\mathbf E\\cdot d\\mathbf S=\\dfrac{q_{\\rm enclosed}}{\\varepsilon_0}"
+        ]
+      ],
+      "caveats": "STATED WITHOUT PROOF: STATED WITHOUT PROOF in NCERT Eq. 1.31; do not claim spherical illustration proves arbitrary shape."
+    },
+    {
+      "title": "Gauss-law field of infinitely long line charge",
+      "source": "NCERT Part I PDF pp. 41–42",
+      "steps": [
+        [
+          "Choose coaxial cylinder radius r and length L; end flux vanishes by radial symmetry.",
+          "\\phi=E(2\\pi rL)",
+          "q_{\\rm enc}=\\lambda L"
+        ],
+        [
+          "Apply Gauss law.",
+          "E(2\\pi rL)=\\dfrac{\\lambda L}{\\varepsilon_0}"
+        ],
+        [
+          "Result",
+          "\\mathbf E=\\dfrac{\\lambda}{2\\pi\\varepsilon_0r}\\hat{\\mathbf r}"
+        ]
+      ],
+      "caveats": "Exactly infinite uniform thin wire; central region of a very long wire approximates this."
+    },
+    {
+      "title": "Gauss-law field of infinite plane sheet",
+      "source": "NCERT Part I PDF pp. 42–43",
+      "steps": [
+        [
+          "Pillbox of face area A has equal flux on both faces; sides contribute zero.",
+          "\\phi=2EA",
+          "q_{\\rm enc}=\\sigma A"
+        ],
+        [
+          "Apply Gauss law.",
+          "2EA=\\dfrac{\\sigma A}{\\varepsilon_0}"
+        ],
+        [
+          "Result",
+          "\\mathbf E=\\dfrac{\\sigma}{2\\varepsilon_0}\\hat{\\mathbf n}"
+        ]
+      ],
+      "caveats": "Nonconducting ideal infinite uniformly charged sheet; finite sheet only near middle. Distinguish conductor exterior σ/ε₀."
+    },
+    {
+      "title": "Gauss-law field of uniformly charged thin spherical shell",
+      "source": "NCERT Part I PDF pp. 43–44",
+      "steps": [
+        [
+          "For r>R choose concentric sphere; total charge q=4πR²σ.",
+          "E(4\\pi r^2)=\\dfrac{q}{\\varepsilon_0}",
+          "q=4\\pi R^2\\sigma"
+        ],
+        [
+          "For r<R no charge is enclosed; spherical symmetry still fixes constant radial E on Gaussian sphere.",
+          "E(4\\pi r^2)=0"
+        ],
+        [
+          "Result",
+          "\\mathbf E(r)=\\begin{cases}\\dfrac{q}{4\\pi\\varepsilon_0r^2}\\hat{\\mathbf r},&r>R\\\\0,&r<R\\end{cases}"
+        ]
+      ],
+      "caveats": "Thin uniformly charged shell; one-sided values at surface differ. NCERT Eqs. 1.34–1.35."
+    }
+  ],
+  "potential-capacitance": [
+    {
+      "title": "Electrostatic potential difference from work",
+      "source": "NCERT Part I PDF pp. 56–57",
+      "steps": [
+        [
+          "The external force balances the electric force during quasistatic movement.",
+          "\\mathbf F_{\\rm ext}=-q\\mathbf E",
+          "W_{R\\to P}=\\int_R^P\\mathbf F_{\\rm ext}\\cdot d\\boldsymbol\\ell=-q\\int_R^P\\mathbf E\\cdot d\\boldsymbol\\ell"
+        ],
+        [
+          "Work changes potential energy; divide by test charge.",
+          "U_P-U_R=W_{R\\to P}",
+          "V_P-V_R=\\dfrac{U_P-U_R}{q}"
+        ],
+        [
+          "Result",
+          "V_P-V_R=-\\int_R^P\\mathbf E\\cdot d\\boldsymbol\\ell"
+        ]
+      ],
+      "caveats": "Potential reference is arbitrary; NCERT says proof of path-independence from Coulomb law is omitted."
+    },
+    {
+      "title": "Potential due to a point charge",
+      "source": "NCERT Part I PDF pp. 57–58",
+      "steps": [
+        [
+          "External force per unit positive test charge opposes radial Coulomb field.",
+          "dW=-\\dfrac{Q}{4\\pi\\varepsilon_0r^{\\prime2}}\\,dr^{\\prime}"
+        ],
+        [
+          "Integrate from infinity with V(∞)=0.",
+          "V(r)=\\int_{\\infty}^{r}-\\dfrac{Q}{4\\pi\\varepsilon_0r^{\\prime2}}\\,dr^{\\prime}"
+        ],
+        [
+          "Result",
+          "V(r)=\\dfrac{Q}{4\\pi\\varepsilon_0r}"
+        ]
+      ],
+      "caveats": "Point charge; holds for either sign Q; NCERT Eqs. 2.5–2.8."
+    },
+    {
+      "title": "Potential of an electric dipole",
+      "source": "NCERT Part I PDF pp. 59–61",
+      "steps": [
+        [
+          "Add scalar potentials of ±q.",
+          "V=\\dfrac{q}{4\\pi\\varepsilon_0}\\left(\\dfrac1{r_+}-\\dfrac1{r_-}\\right)",
+          "r_\\pm^2=r^2+a^2\\mp2ar\\cos\\theta"
+        ],
+        [
+          "For r≫a use first-order binomial approximation.",
+          "\\dfrac1{r_+}\\simeq\\dfrac1r\\left(1+\\dfrac{a\\cos\\theta}{r}\\right)",
+          "\\dfrac1{r_-}\\simeq\\dfrac1r\\left(1-\\dfrac{a\\cos\\theta}{r}\\right)"
+        ],
+        [
+          "Insert p=2qa.",
+          "V\\simeq\\dfrac{p\\cos\\theta}{4\\pi\\varepsilon_0r^2}"
+        ],
+        [
+          "Result",
+          "V(\\mathbf r)=\\dfrac{\\mathbf p\\cdot\\hat{\\mathbf r}}{4\\pi\\varepsilon_0r^2}"
+        ]
+      ],
+      "caveats": "Approximate for finite dipole r≫a, exact for ideal point dipole; equatorial potential zero; axis ±p/(4πε₀r²)."
+    },
+    {
+      "title": "Potential due to charge system and shell",
+      "source": "NCERT Part I PDF pp. 61–62",
+      "steps": [
+        [
+          "Scalar potential superposes algebraically.",
+          "V_i(P)=\\dfrac{q_i}{4\\pi\\varepsilon_0r_{iP}}",
+          "V(P)=\\sum_iV_i(P)"
+        ],
+        [
+          "For uniformly charged shell, external potential is point-charge potential; interior E=0 gives constant V matched at R.",
+          "V(r<R)=V(R)=\\dfrac{q}{4\\pi\\varepsilon_0R}"
+        ],
+        [
+          "Result",
+          "V(P)=\\dfrac{1}{4\\pi\\varepsilon_0}\\sum_i\\dfrac{q_i}{r_{iP}};\\quad V_{\\rm shell}=\\begin{cases}\\dfrac{q}{4\\pi\\varepsilon_0r},&r\\ge R\\\\\\dfrac{q}{4\\pi\\varepsilon_0R},&r<R\\end{cases}"
+        ]
+      ],
+      "caveats": "Potential sum for point charges; shell result assumes uniform surface charge. Continuous-charge integral mentioned but not performed."
+    },
+    {
+      "title": "Equipotentials perpendicular to electric field",
+      "source": "NCERT Part I PDF pp. 64",
+      "steps": [
+        [
+          "A tangential E component would do nonzero work along equipotential, contradicting ΔV=0.",
+          "\\Delta W=q\\mathbf E\\cdot\\Delta\\boldsymbol\\ell",
+          "\\Delta V=-\\dfrac{\\Delta W}{q}=0"
+        ],
+        [
+          "Result",
+          "\\mathbf E\\cdot d\\boldsymbol\\ell=0\\quad\\text{along an equipotential}"
+        ]
+      ],
+      "caveats": "At points where E≠0, field is normal to equipotential surface."
+    },
+    {
+      "title": "Relation of electric field and potential",
+      "source": "NCERT Part I PDF pp. 64–65",
+      "steps": [
+        [
+          "Move unit positive charge a small normal distance δl opposite field; external work equals potential difference.",
+          "E\\delta l=-\\delta V"
+        ],
+        [
+          "Take infinitesimal limit.",
+          "E_n=-\\dfrac{dV}{dl}"
+        ],
+        [
+          "Result",
+          "\\mathbf E=-\\boldsymbol\\nabla V"
+        ]
+      ],
+      "caveats": "NCERT Eq. 2.20 explicitly gives E=−δV/δl normal to equipotentials; full vector gradient is equivalent extension, not separately derived there."
+    },
+    {
+      "title": "Potential energy of two and three point charges",
+      "source": "NCERT Part I PDF pp. 65–66",
+      "steps": [
+        [
+          "First charge costs no work from infinity; second costs q₂ times first potential.",
+          "W_1=0",
+          "W_2=q_2V_1(\\mathbf r_2)=\\dfrac{q_1q_2}{4\\pi\\varepsilon_0r_{12}}"
+        ],
+        [
+          "Third costs q₃ times potential of first two; add pair energies.",
+          "W_3=\\dfrac1{4\\pi\\varepsilon_0}\\left(\\dfrac{q_1q_3}{r_{13}}+\\dfrac{q_2q_3}{r_{23}}\\right)"
+        ],
+        [
+          "Result",
+          "U=\\dfrac1{4\\pi\\varepsilon_0}\\sum_{i<j}\\dfrac{q_iq_j}{r_{ij}}"
+        ]
+      ],
+      "caveats": "No self-energies; assemble from infinity, electrostatic forces conservative."
+    },
+    {
+      "title": "Potential energy of charges in external field",
+      "source": "NCERT Part I PDF pp. 68–69",
+      "steps": [
+        [
+          "Bring first charge against external potential; bring second against external and first charge.",
+          "W_1=q_1V_{\\rm ext}(\\mathbf r_1)",
+          "W_2=q_2V_{\\rm ext}(\\mathbf r_2)+\\dfrac{q_1q_2}{4\\pi\\varepsilon_0r_{12}}"
+        ],
+        [
+          "Result",
+          "U=q_1V_{\\rm ext}(\\mathbf r_1)+q_2V_{\\rm ext}(\\mathbf r_2)+\\dfrac{q_1q_2}{4\\pi\\varepsilon_0r_{12}}"
+        ]
+      ],
+      "caveats": "External potential excludes field produced by charges being assembled; single charge U=qV_ext."
+    },
+    {
+      "title": "Potential energy of dipole in uniform external field",
+      "source": "NCERT Part I PDF pp. 70–71",
+      "steps": [
+        [
+          "Quasistatically rotate against torque pE sinθ.",
+          "W_{\\rm ext}=\\int_{\\theta_0}^{\\theta}pE\\sin\\vartheta\\,d\\vartheta=pE(\\cos\\theta_0-\\cos\\theta)"
+        ],
+        [
+          "Choose U=0 for θ₀=π/2.",
+          "U(\\theta)=-pE\\cos\\theta"
+        ],
+        [
+          "Result",
+          "U=-\\mathbf p\\cdot\\mathbf E"
+        ]
+      ],
+      "caveats": "Uniform external E, permanent dipole; interaction self-energy is independent of θ and dropped."
+    },
+    {
+      "title": "Conductor interior, charge location and equipotential",
+      "source": "NCERT Part I PDF pp. 72",
+      "steps": [
+        [
+          "Static mobile charges rearrange until interior E=0.",
+          "\\mathbf E_{\\rm inside}=0"
+        ],
+        [
+          "Gauss law on arbitrary interior volume gives no excess enclosed charge; zero field makes potential constant.",
+          "\\oint\\mathbf E\\cdot d\\mathbf S=0\\Rightarrow q_{\\rm enclosed}=0",
+          "\\Delta V=-\\int\\mathbf E\\cdot d\\boldsymbol\\ell=0"
+        ],
+        [
+          "Result",
+          "\\mathbf E_{\\rm inside}=0,\\quad \\rho_{\\rm excess,inside}=0,\\quad V_{\\rm conductor}=\\text{constant}"
+        ]
+      ],
+      "caveats": "Electrostatic equilibrium only; microscopic ion/electron charge not individually zero. NCERT section 2.9 items 1–4."
+    },
+    {
+      "title": "Electric field just outside charged conductor",
+      "source": "NCERT Part I PDF pp. 72–73",
+      "steps": [
+        [
+          "Use a vanishing-height Gaussian pillbox spanning conductor surface.",
+          "\\phi=E_{\\rm out}\\,\\Delta S",
+          "q_{\\rm enc}=\\sigma\\Delta S"
+        ],
+        [
+          "Interior field and side flux vanish.",
+          "E_{\\rm out}\\Delta S=\\dfrac{\\sigma\\Delta S}{\\varepsilon_0}"
+        ],
+        [
+          "Result",
+          "\\mathbf E_{\\rm out}=\\dfrac{\\sigma}{\\varepsilon_0}\\hat{\\mathbf n}"
+        ]
+      ],
+      "caveats": "Just outside a conductor in vacuum at electrostatic equilibrium; unlike isolated nonconducting plane E=σ/(2ε₀)."
+    },
+    {
+      "title": "Electrostatic shielding by empty conducting cavity",
+      "source": "NCERT Part I PDF pp. 73–74",
+      "steps": [
+        [
+          "NCERT asserts the general cavity result and omits proof.",
+          "\\mathbf E_{\\rm cavity}=0"
+        ],
+        [
+          "Result",
+          "\\mathbf E_{\\rm cavity}=0"
+        ]
+      ],
+      "caveats": "STATED WITHOUT PROOF: STATED WITHOUT GENERAL PROOF for arbitrary conductor cavity with no charge within; spherical shell special case proved earlier."
+    },
+    {
+      "title": "Capacitance proportionality and definition",
+      "source": "NCERT Part I PDF pp. 77–78",
+      "steps": [
+        [
+          "For fixed conductor geometry and dielectric, linear electrostatic fields scale with deposited plate charge.",
+          "Q\\mapsto kQ\\quad\\Longrightarrow\\quad E\\mapsto kE\\quad\\Longrightarrow\\quad V\\mapsto kV"
+        ],
+        [
+          "Their ratio therefore defines a geometry-dependent capacitance.",
+          "Q\\propto V"
+        ],
+        [
+          "Result",
+          "C=\\dfrac QV"
+        ]
+      ],
+      "caveats": "NCERT Eq. 2.38; assumes linear medium, plates carry +Q and −Q. This is a definition argued from proportionality, not an independent field calculation."
+    },
+    {
+      "title": "Parallel-plate capacitor in vacuum",
+      "source": "NCERT Part I PDF pp. 78–79",
+      "steps": [
+        [
+          "Superpose two sheet fields; outside cancels, inside adds.",
+          "\\sigma=Q/A",
+          "E_{\\rm between}=\\dfrac{\\sigma}{2\\varepsilon_0}+\\dfrac{\\sigma}{2\\varepsilon_0}=\\dfrac{Q}{\\varepsilon_0A}"
+        ],
+        [
+          "Uniform field gives voltage; use C=Q/V.",
+          "V=Ed=\\dfrac{Qd}{\\varepsilon_0A}",
+          "C=Q/V"
+        ],
+        [
+          "Result",
+          "C_0=\\dfrac{\\varepsilon_0A}{d}"
+        ]
+      ],
+      "caveats": "Large plates, d²≪A; neglect fringing; NCERT Eqs. 2.39–2.43."
+    },
+    {
+      "title": "Dielectric-filled parallel-plate capacitor",
+      "source": "NCERT Part I PDF pp. 79–81",
+      "steps": [
+        [
+          "Polarization produces bound surface densities ±σp opposing free-charge field.",
+          "E=\\dfrac{\\sigma-\\sigma_p}{\\varepsilon_0}",
+          "\\sigma-\\sigma_p=\\dfrac{\\sigma}{K}"
+        ],
+        [
+          "Compute reduced V at fixed free charge, then C.",
+          "V=Ed=\\dfrac{Qd}{K\\varepsilon_0A}",
+          "C=Q/V"
+        ],
+        [
+          "Result",
+          "C=K\\dfrac{\\varepsilon_0A}{d}=KC_0"
+        ]
+      ],
+      "caveats": "Entire gap filled with homogeneous linear dielectric; K=ε/ε₀>1. P·n=σp on PDF p81 is TAKEN WITHOUT PROOF."
+    },
+    {
+      "title": "Polarisation surface charge and electric displacement",
+      "source": "NCERT Part I PDF pp. 80–81",
+      "steps": [
+        [
+          "NCERT takes the surface bound-charge relation without proof.",
+          "\\sigma_{\\rm b}=\\mathbf P\\cdot\\hat{\\mathbf n}"
+        ],
+        [
+          "For parallel plates define displacement and relate to free surface charge.",
+          "\\mathbf D=\\varepsilon_0\\mathbf E+\\mathbf P",
+          "\\mathbf D\\cdot\\hat{\\mathbf n}=\\sigma_{\\rm free}"
+        ],
+        [
+          "In a linear isotropic filled slab D=ε₀KE, giving polarisation coefficient.",
+          "\\mathbf P=\\varepsilon_0(K-1)\\mathbf E"
+        ],
+        [
+          "Result",
+          "\\mathbf D=\\varepsilon_0\\mathbf E+\\mathbf P=\\varepsilon_0K\\mathbf E"
+        ]
+      ],
+      "caveats": "STATED WITHOUT PROOF: Bound-charge relation σ_b=P·n is STATED WITHOUT PROOF on PDF p81; NCERT convention P=χ_e E gives χ_e=ε₀(K−1), a dimensional susceptibility, unlike dimensionless convention elsewhere."
+    },
+    {
+      "title": "Partial dielectric slab (NCERT worked Example 2.8)",
+      "source": "NCERT Part I PDF pp. 81–82",
+      "steps": [
+        [
+          "Treat vacuum thickness d−t and dielectric thickness t as successive potential drops.",
+          "E_0=\\dfrac{Q}{\\varepsilon_0A}",
+          "E_{\\rm diel}=\\dfrac{E_0}{K}",
+          "V=E_0(d-t)+\\dfrac{E_0t}{K}"
+        ],
+        [
+          "Divide Q by V; textbook example t=3d/4.",
+          "C=\\dfrac{\\varepsilon_0A}{d-t+t/K}",
+          "C_{t=3d/4}=\\dfrac{4K}{K+3}C_0"
+        ],
+        [
+          "Result",
+          "C=\\dfrac{\\varepsilon_0A}{d-t+t/K}"
+        ]
+      ],
+      "caveats": "Worked example, not separate numbered section; slab fills plate area and leaves vacuum elsewhere; fixed Q and neglected fringing."
+    },
+    {
+      "title": "Series capacitors",
+      "source": "NCERT Part I PDF pp. 82–83",
+      "steps": [
+        [
+          "Intermediate conductor stays net neutral; each capacitor has charge magnitude Q.",
+          "V=\\sum_iV_i=\\sum_i\\dfrac{Q}{C_i}"
+        ],
+        [
+          "Set V=Q/C_eq and cancel Q.",
+          "\\dfrac{Q}{C_{\\rm eq}}=Q\\sum_i\\dfrac1{C_i}"
+        ],
+        [
+          "Result",
+          "\\dfrac1{C_{\\rm eq}}=\\sum_i\\dfrac1{C_i}"
+        ]
+      ],
+      "caveats": "Ideal series wiring, uncharged intermediate conductors initially; NCERT Eqs. 2.55–2.60."
+    },
+    {
+      "title": "Parallel capacitors",
+      "source": "NCERT Part I PDF pp. 83",
+      "steps": [
+        [
+          "All capacitors share voltage V; source supplies sum of plate charges.",
+          "Q_i=C_iV",
+          "Q=\\sum_iQ_i=V\\sum_i C_i"
+        ],
+        [
+          "Set Q=C_eq V.",
+          "C_{\\rm eq}V=V\\sum_iC_i"
+        ],
+        [
+          "Result",
+          "C_{\\rm eq}=\\sum_i C_i"
+        ]
+      ],
+      "caveats": "Ideal parallel wiring; NCERT Eqs. 2.61–2.67."
+    },
+    {
+      "title": "Energy stored in a capacitor",
+      "source": "NCERT Part I PDF pp. 84–85",
+      "steps": [
+        [
+          "At intermediate plate charge q, voltage is q/C; move infinitesimal charge dq.",
+          "V(q)=q/C",
+          "dW=V(q)dq=\\dfrac qC\\,dq"
+        ],
+        [
+          "Integrate from zero charge to Q.",
+          "U=\\int_0^Q\\dfrac qC\\,dq=\\dfrac{Q^2}{2C}"
+        ],
+        [
+          "Result",
+          "U=\\dfrac{Q^2}{2C}=\\dfrac12QV=\\dfrac12CV^2"
+        ]
+      ],
+      "caveats": "Quasistatic charging with fixed C; energy is not QV."
+    },
+    {
+      "title": "Electric-field energy density",
+      "source": "NCERT Part I PDF pp. 85–86",
+      "steps": [
+        [
+          "For vacuum parallel plates use C=ε₀A/d and Q=ε₀EA.",
+          "U=\\dfrac{Q^2}{2C}=\\dfrac12\\varepsilon_0E^2Ad"
+        ],
+        [
+          "Divide by field-containing volume Ad.",
+          "u=\\dfrac{U}{Ad}"
+        ],
+        [
+          "Result",
+          "u=\\dfrac12\\varepsilon_0E^2"
+        ]
+      ],
+      "caveats": "NCERT derives from vacuum parallel plates then states generality for electrostatic fields; not a proof for arbitrary fields."
+    }
+  ],
+  "current-electricity": [
+    {
+      "title": "Charge transported and definition of current",
+      "source": "NCERT Part I PDF pp. 97–98",
+      "steps": [
+        [
+          "If ΔQ traverses a cross section in time Δt, define mean current, with instantaneous limit.",
+          "I_{\\rm av}=\\dfrac{\\Delta Q}{\\Delta t}",
+          "I=\\dfrac{dQ}{dt}"
+        ],
+        [
+          "Result",
+          "I=\\dfrac{dQ}{dt}"
+        ]
+      ],
+      "caveats": "STATED THEN REWRITTEN: Definition, not derived from a microscopic model; positive conventional current follows positive charge flow."
+    },
+    {
+      "title": "Resistance proportional to length and inverse area",
+      "source": "NCERT Part I PDF pp. 99–101",
+      "steps": [
+        [
+          "Join identical slabs end to end: V doubles at same I; split slab lengthwise: I halves at same V.",
+          "R(2l,A)=2R(l,A)",
+          "R(l,A/2)=2R(l,A)"
+        ],
+        [
+          "Combine proportionalities and define material resistivity.",
+          "R\\propto l",
+          "R\\propto A^{-1}"
+        ],
+        [
+          "Result",
+          "R=\\rho\\dfrac lA"
+        ]
+      ],
+      "caveats": "Uniform ohmic conductor of constant cross section and material; ρ may depend on temperature."
+    },
+    {
+      "title": "Microscopic form of Ohm law from geometry",
+      "source": "NCERT Part I PDF pp. 100–101",
+      "steps": [
+        [
+          "Use V=IR, R=ρl/A, current density j=I/A, and uniform E=V/l.",
+          "El=\\rho l\\dfrac IA=\\rho lj"
+        ],
+        [
+          "Cancel length and invert resistivity.",
+          "\\mathbf E=\\rho\\mathbf j",
+          "\\sigma=1/\\rho"
+        ],
+        [
+          "Result",
+          "\\mathbf j=\\sigma\\mathbf E"
+        ]
+      ],
+      "caveats": "Ohmic isotropic conductor; current density vector parallel to E."
+    },
+    {
+      "title": "Electron drift velocity",
+      "source": "NCERT Part I PDF pp. 101–102",
+      "steps": [
+        [
+          "Field gives acceleration between collisions; post-collision random velocities average zero.",
+          "\\mathbf a=-\\dfrac e m\\mathbf E",
+          "\\mathbf V_i=\\mathbf v_i-\\dfrac{e\\mathbf E}{m}t_i"
+        ],
+        [
+          "Average elapsed collision time equals relaxation time τ.",
+          "\\langle\\mathbf v_i\\rangle=0",
+          "\\langle t_i\\rangle=\\tau"
+        ],
+        [
+          "Result",
+          "\\mathbf v_d=-\\dfrac{e\\tau}{m}\\mathbf E"
+        ]
+      ],
+      "caveats": "Electron charge is −e; drift opposite E. Assumes field-independent average relaxation time in elementary model."
+    },
+    {
+      "title": "Current density and conductivity from drift",
+      "source": "NCERT Part I PDF pp. 102–103",
+      "steps": [
+        [
+          "In time Δt electrons in swept volume A v_d Δt cross section.",
+          "\\Delta N=nA|\\mathbf v_d|\\Delta t",
+          "I=\\dfrac{e\\Delta N}{\\Delta t}=neA|\\mathbf v_d|"
+        ],
+        [
+          "Current density uses carrier charge q=−e; substitute drift expression.",
+          "\\mathbf j=-ne\\mathbf v_d=\\dfrac{ne^2\\tau}{m}\\mathbf E"
+        ],
+        [
+          "Result",
+          "I=neA|\\mathbf v_d|,\\quad\\sigma=\\dfrac{ne^2\\tau}{m},\\quad\\rho=\\dfrac{m}{ne^2\\tau}"
+        ]
+      ],
+      "caveats": "n free electrons per volume; area normal to flow. Model assumes n and τ independent of E."
+    },
+    {
+      "title": "Electron mobility",
+      "source": "NCERT Part I PDF pp. 104–105",
+      "steps": [
+        [
+          "Define mobility as magnitude of drift per unit field.",
+          "\\mu=\\dfrac{|\\mathbf v_d|}{E}"
+        ],
+        [
+          "Substitute collision-time expression for drift.",
+          "|\\mathbf v_d|=\\dfrac{e\\tau E}{m}"
+        ],
+        [
+          "Result",
+          "\\mu=\\dfrac{e\\tau}{m}"
+        ]
+      ],
+      "caveats": "Positive mobility; for this one-carrier model σ=neμ."
+    },
+    {
+      "title": "Linear temperature coefficient of resistivity",
+      "source": "NCERT Part I PDF pp. 107–108",
+      "steps": [
+        [
+          "NCERT introduces approximate linear dependence from observation over restricted temperature range.",
+          "\\rho_T=\\rho_0[1+\\alpha(T-T_0)]"
+        ],
+        [
+          "Rearrange to define fractional slope.",
+          "\\alpha=\\dfrac{\\rho_T-\\rho_0}{\\rho_0(T-T_0)}"
+        ],
+        [
+          "Result",
+          "\\rho_T=\\rho_0[1+\\alpha(T-T_0)]"
+        ]
+      ],
+      "caveats": "EMPIRICAL STATED: EMPIRICAL APPROXIMATION, not microscopic derivation; metallic α typically positive; if geometry unchanged R_T=R_0[1+α(T−T₀)]."
+    },
+    {
+      "title": "Joule heat and electric power",
+      "source": "NCERT Part I PDF pp. 109–110",
+      "steps": [
+        [
+          "Charge IΔt drops potential V and loses electric potential energy.",
+          "\\Delta Q=I\\Delta t",
+          "\\Delta U=-\\Delta QV=-IV\\Delta t"
+        ],
+        [
+          "Collision dissipation equals gained electrical energy; divide by time.",
+          "H=IVt",
+          "P=\\dfrac Ht=IV"
+        ],
+        [
+          "Apply V=IR for ohmic resistor.",
+          "P=I^2R=\\dfrac{V^2}{R}"
+        ],
+        [
+          "Result",
+          "H=I^2Rt=VIt=\\dfrac{V^2t}{R}"
+        ]
+      ],
+      "caveats": "Resistive steady-state heat, not general power formula for arbitrary source or reactive device."
+    },
+    {
+      "title": "Power loss in transmission line",
+      "source": "NCERT Part I PDF pp. 110–111",
+      "steps": [
+        [
+          "For delivered load power P=VI, line current I=P/V.",
+          "I=P/V"
+        ],
+        [
+          "Loss in cable resistance R_c is I²R_c.",
+          "P_{\\rm loss}=I^2R_c"
+        ],
+        [
+          "Result",
+          "P_{\\rm loss}=\\dfrac{P^2R_c}{V^2}"
+        ]
+      ],
+      "caveats": "At fixed delivered load power; transformer details are not derived in chapter 3."
+    },
+    {
+      "title": "Series resistors",
+      "source": "NCERT Part I PDF pp. 111–112",
+      "steps": [
+        [
+          "Charge conservation makes current I common; individual voltage drops add.",
+          "V=\\sum_iV_i=I\\sum_iR_i"
+        ],
+        [
+          "Identify V=IR_eq.",
+          "IR_{\\rm eq}=I\\sum_iR_i"
+        ],
+        [
+          "Result",
+          "R_{\\rm eq}=\\sum_iR_i"
+        ]
+      ],
+      "caveats": "Ideal connecting wires and ohmic resistors."
+    },
+    {
+      "title": "Parallel resistors",
+      "source": "NCERT Part I PDF pp. 112–113",
+      "steps": [
+        [
+          "Every branch sees V, and junction current adds.",
+          "I=\\sum_iI_i=V\\sum_i\\dfrac1{R_i}"
+        ],
+        [
+          "Identify I=V/R_eq.",
+          "\\dfrac V{R_{\\rm eq}}=V\\sum_i\\dfrac1{R_i}"
+        ],
+        [
+          "Result",
+          "\\dfrac1{R_{\\rm eq}}=\\sum_i\\dfrac1{R_i}"
+        ]
+      ],
+      "caveats": "Ideal connecting wires and ohmic resistors; two branches R_eq=R₁R₂/(R₁+R₂)."
+    },
+    {
+      "title": "Cell terminal potential and internal resistance",
+      "source": "NCERT Part I PDF pp. 114–115",
+      "steps": [
+        [
+          "Electrolyte internal drop Ir reduces open-circuit emf ε while discharging.",
+          "V=\\varepsilon-Ir"
+        ],
+        [
+          "External resistor obeys V=IR; equate expressions.",
+          "IR=\\varepsilon-Ir"
+        ],
+        [
+          "Result",
+          "I=\\dfrac{\\varepsilon}{R+r},\\quad V=\\dfrac{\\varepsilon R}{R+r}"
+        ]
+      ],
+      "caveats": "Discharging cell with current exiting positive terminal; charging reverses sign of Ir; emf is open-circuit terminal voltage."
+    },
+    {
+      "title": "Cells in series",
+      "source": "NCERT Part I PDF pp. 117–118",
+      "steps": [
+        [
+          "Add terminal drops of two cells carrying common current.",
+          "V_{AC}=(\\varepsilon_1-Ir_1)+(\\varepsilon_2-Ir_2)"
+        ],
+        [
+          "Compare with effective source V=ε_eq−Ir_eq.",
+          "V_{AC}=(\\varepsilon_1+\\varepsilon_2)-I(r_1+r_2)"
+        ],
+        [
+          "Result",
+          "\\varepsilon_{\\rm eq}=\\varepsilon_1+\\varepsilon_2,\\quad r_{\\rm eq}=r_1+r_2"
+        ]
+      ],
+      "caveats": "For aiding orientation; opposing cell enters with negative signed emf, but internal resistances still add."
+    },
+    {
+      "title": "Cells in parallel",
+      "source": "NCERT Part I PDF pp. 118–119",
+      "steps": [
+        [
+          "Common terminal potential V yields I₁=(ε₁−V)/r₁ and I₂=(ε₂−V)/r₂.",
+          "I=I_1+I_2=\\dfrac{\\varepsilon_1}{r_1}+\\dfrac{\\varepsilon_2}{r_2}-V\\left(\\dfrac1{r_1}+\\dfrac1{r_2}\\right)"
+        ],
+        [
+          "Compare V=ε_eq−Ir_eq.",
+          "\\dfrac1{r_{\\rm eq}}=\\dfrac1{r_1}+\\dfrac1{r_2}",
+          "\\dfrac{\\varepsilon_{\\rm eq}}{r_{\\rm eq}}=\\dfrac{\\varepsilon_1}{r_1}+\\dfrac{\\varepsilon_2}{r_2}"
+        ],
+        [
+          "Result",
+          "\\varepsilon_{\\rm eq}=\\dfrac{\\varepsilon_1r_2+\\varepsilon_2r_1}{r_1+r_2},\\quad r_{\\rm eq}=\\dfrac{r_1r_2}{r_1+r_2}"
+        ]
+      ],
+      "caveats": "Finite nonzero internal resistances; opposing polarity uses signed emf. Identical cells: ε_eq=ε, r_eq=r/2."
+    },
+    {
+      "title": "Kirchhoff junction and loop rules",
+      "source": "NCERT Part I PDF pp. 119–120",
+      "steps": [
+        [
+          "No charge accumulates at a junction in steady current.",
+          "\\dfrac{dQ_{\\rm junction}}{dt}=\\sum I_{\\rm in}-\\sum I_{\\rm out}=0"
+        ],
+        [
+          "Potential returns to starting value after tracing any closed loop.",
+          "\\sum_{\\rm loop}\\Delta V=0"
+        ],
+        [
+          "Result",
+          "\\sum I_{\\rm in}=\\sum I_{\\rm out},\\quad\\sum_{\\rm loop}\\Delta V=0"
+        ]
+      ],
+      "caveats": "Rules are justified by charge conservation and single-valued electrostatic potential; choose consistent current/potential signs."
+    },
+    {
+      "title": "Wheatstone bridge balance",
+      "source": "NCERT Part I PDF pp. 122–123",
+      "steps": [
+        [
+          "At zero galvanometer current, two bridge junctions have same potential; NCERT loops give I₁R₁=I₂R₂ and I₁R₃=I₂R₄.",
+          "I_g=0",
+          "I_1R_1=I_2R_2",
+          "I_1R_3=I_2R_4"
+        ],
+        [
+          "Divide to eliminate branch currents.",
+          "\\dfrac{R_2}{R_1}=\\dfrac{R_4}{R_3}"
+        ],
+        [
+          "Result",
+          "\\dfrac{R_1}{R_2}=\\dfrac{R_3}{R_4}\\quad\\text{or}\\quad R_1R_4=R_2R_3"
+        ]
+      ],
+      "caveats": "NCERT Fig. 3.25 arm assignment: R₁ and R₃ share branch current, R₂ and R₄ share other; valid at balance only."
+    },
+    {
+      "title": "Meter bridge balance",
+      "source": "NCERT Part I PDF pp. 124–125",
+      "steps": [
+        [
+          "Uniform wire has resistance proportional to segment length l and 100−l (cm).",
+          "R_{AD}=R_{\\rm cm}l",
+          "R_{DC}=R_{\\rm cm}(100-l)"
+        ],
+        [
+          "Insert four arms R,S,R_AD,R_DC into Wheatstone null condition.",
+          "\\dfrac RS=\\dfrac{R_{AD}}{R_{DC}}=\\dfrac l{100-l}"
+        ],
+        [
+          "Result",
+          "R=S\\dfrac l{100-l}"
+        ]
+      ],
+      "caveats": "Balance length l measured from end next to unknown R; wire uniform, contact/end resistance neglected."
+    },
+    {
+      "title": "Potentiometer comparison of cell emfs",
+      "source": "NCERT Part I PDF pp. 126",
+      "steps": [
+        [
+          "Uniform wire has constant potential gradient φ; at each null point no current through test cell.",
+          "\\varepsilon_1=\\phi l_1",
+          "\\varepsilon_2=\\phi l_2"
+        ],
+        [
+          "Divide equations to remove φ.",
+          "\\dfrac{\\varepsilon_1}{\\varepsilon_2}=\\dfrac{l_1}{l_2}"
+        ],
+        [
+          "Result",
+          "\\dfrac{\\varepsilon_1}{\\varepsilon_2}=\\dfrac{l_1}{l_2}"
+        ]
+      ],
+      "caveats": "Same unchanged driving-current/gradient for both measurements; each balance within wire."
+    },
+    {
+      "title": "Potentiometer internal resistance of cell",
+      "source": "NCERT Part I PDF pp. 126–127",
+      "steps": [
+        [
+          "Open load key measures emf with no current; closed key measures terminal potential under load R.",
+          "\\varepsilon=\\phi l_1",
+          "V=\\phi l_2",
+          "\\dfrac{\\varepsilon}{V}=\\dfrac{l_1}{l_2}"
+        ],
+        [
+          "Use ε=I(R+r), V=IR.",
+          "\\dfrac{l_1}{l_2}=\\dfrac{R+r}{R}"
+        ],
+        [
+          "Result",
+          "r=R\\left(\\dfrac{l_1}{l_2}-1\\right)"
+        ]
+      ],
+      "caveats": "Potentiometer gradient constant; null measurement draws no galvanometer current; closed load draws current."
+    }
+  ],
+  "moving-charges-magnetism": [
+    {
+      "title": "Force on a current-carrying straight conductor",
+      "source": "NCERT Part I PDF pp. 139–140",
+      "pdf_pages": "139–140",
+      "steps": [
+        [
+          "Count charge carriers in a segment of length l and cross-section A.",
+          "N=nAl"
+        ],
+        [
+          "Sum Lorentz forces and substitute current density.",
+          "\\boldsymbol{F}=nAlq(\\boldsymbol{v}_d\\times\\boldsymbol{B})",
+          "\\boldsymbol{j}=nq\\boldsymbol{v}_d",
+          "\\boldsymbol{F}=I(\\boldsymbol{l}\\times\\boldsymbol{B})"
+        ]
+      ],
+      "concise_steps": [
+        "Count charge carriers in a segment of length l and cross-section A.",
+        "Sum Lorentz forces and substitute current density."
+      ],
+      "final_formula": "\\boldsymbol{F}=I\\boldsymbol{l}\\times\\boldsymbol{B}",
+      "caveats": "Derived in §4.2.3, Eq. (4.4). B is the external field; l points along conventional current. Lorentz force itself is an experimentally established law, not derived here."
+    },
+    {
+      "title": "Circular and helical motion of a charge in uniform magnetic field",
+      "source": "NCERT Part I PDF pp. 141–142",
+      "pdf_pages": "141–142",
+      "steps": [
+        [
+          "Magnetic force supplies centripetal force to perpendicular motion.",
+          "|q|v_{\\perp}B=\\frac{mv_{\\perp}^{2}}{r}",
+          "r=\\frac{mv_{\\perp}}{|q|B}"
+        ],
+        [
+          "Use v perpendicular = angular speed times radius.",
+          "\\omega=\\frac{v_{\\perp}}{r}=\\frac{|q|B}{m}",
+          "\\nu=\\frac{|q|B}{2\\pi m}",
+          "T=\\frac{2\\pi m}{|q|B}"
+        ],
+        [
+          "Parallel velocity is unchanged; compute pitch per revolution.",
+          "p=v_{\\parallel}T=\\frac{2\\pi mv_{\\parallel}}{|q|B}"
+        ]
+      ],
+      "concise_steps": [
+        "Magnetic force supplies centripetal force to perpendicular motion.",
+        "Use v perpendicular = angular speed times radius.",
+        "Parallel velocity is unchanged; compute pitch per revolution."
+      ],
+      "final_formula": "r=\\frac{mv_{\\perp}}{|q|B},\\quad T=\\frac{2\\pi m}{|q|B},\\quad p=\\frac{2\\pi mv_{\\parallel}}{|q|B}",
+      "caveats": "§4.3, Eqs. (4.5)–(4.6). Text uses q as positive magnitude; absolute value makes this valid for negative charge. Pure magnetic force does no work."
+    },
+    {
+      "title": "Velocity selector using crossed fields",
+      "source": "NCERT Part I PDF pp. 144",
+      "pdf_pages": "144",
+      "steps": [
+        [
+          "For perpendicular crossed fields, electric and magnetic forces oppose.",
+          "F_E=|q|E,\\qquad F_B=|q|vB"
+        ],
+        [
+          "Equate magnitudes for undeflected passage.",
+          "|q|E=|q|vB",
+          "v=\\frac{E}{B}"
+        ]
+      ],
+      "concise_steps": [
+        "For perpendicular crossed fields, electric and magnetic forces oppose.",
+        "Equate magnitudes for undeflected passage."
+      ],
+      "final_formula": "v=\\frac{E}{B}",
+      "caveats": "§4.4.1, Eq. (4.7). Fields and selected velocity mutually perpendicular; wrong-direction particles are deflected."
+    },
+    {
+      "title": "Cyclotron frequency, resonance and maximum kinetic energy",
+      "source": "NCERT Part I PDF pp. 144–145",
+      "pdf_pages": "144–145",
+      "steps": [
+        [
+          "Circular motion fixes angular frequency independently of radius.",
+          "|q|vB=\\frac{mv^2}{r}",
+          "\\nu_c=\\frac{|q|B}{2\\pi m}"
+        ],
+        [
+          "Reverse the dee voltage each semicircle; match oscillator frequency.",
+          "\\nu_a=\\nu_c,\\qquad T=\\frac{2\\pi m}{|q|B}"
+        ],
+        [
+          "At extraction radius R find speed and energy.",
+          "v_{\\max}=\\frac{|q|BR}{m}",
+          "K_{\\max}=\\frac{mv_{\\max}^{2}}{2}=\\frac{q^{2}B^{2}R^{2}}{2m}"
+        ]
+      ],
+      "concise_steps": [
+        "Circular motion fixes angular frequency independently of radius.",
+        "Reverse the dee voltage each semicircle; match oscillator frequency.",
+        "At extraction radius R find speed and energy."
+      ],
+      "final_formula": "\\nu_c=\\frac{|q|B}{2\\pi m},\\qquad K_{\\max}=\\frac{q^2B^2R^2}{2m}",
+      "caveats": "§4.4.2, Eqs. (4.8)–(4.10). Nonrelativistic; accelerating electric field is across the dee gap; K rises by |q|V per crossing. Resonance fails as relativistic mass effects become appreciable."
+    },
+    {
+      "title": "Biot–Savart law for a current element (stated empirical result)",
+      "source": "NCERT Part I PDF pp. 147",
+      "pdf_pages": "147",
+      "steps": [
+        [
+          "Current element field has cross-product direction and inverse-square magnitude.",
+          "d\\boldsymbol{B}=\\frac{\\mu_0 I}{4\\pi}\\frac{d\\boldsymbol{l}\\times\\hat{\\boldsymbol{r}}}{r^2}",
+          "dB=\\frac{\\mu_0 I\\,dl\\sin\\theta}{4\\pi r^2}"
+        ]
+      ],
+      "concise_steps": [
+        "Current element field has cross-product direction and inverse-square magnitude."
+      ],
+      "final_formula": "d\\boldsymbol{B}=\\frac{\\mu_0 I}{4\\pi}\\frac{d\\boldsymbol{l}\\times\\hat{\\boldsymbol{r}}}{r^2}",
+      "caveats": "§4.5, Eq. (4.11). Basic empirical law, not derived; integrate vectorially over entire wire for net field. Vacuum and steady current."
+    },
+    {
+      "title": "Magnetic field on the axis and at the centre of a circular loop",
+      "source": "NCERT Part I PDF pp. 149–150",
+      "pdf_pages": "149–150",
+      "steps": [
+        [
+          "Apply Biot–Savart to a loop element; all elements lie distance sqrt(x²+R²) from axial point.",
+          "dB=\\frac{\\mu_0 I\\,dl}{4\\pi(x^2+R^2)}"
+        ],
+        [
+          "Transverse components cancel in opposite pairs; project onto axis.",
+          "\\cos\\theta=\\frac{R}{\\sqrt{x^2+R^2}}",
+          "dB_x=\\frac{\\mu_0 IR\\,dl}{4\\pi(x^2+R^2)^{3/2}}"
+        ],
+        [
+          "Integrate around circumference; set x=0 for centre.",
+          "B_x=\\frac{\\mu_0 IR}{4\\pi(x^2+R^2)^{3/2}}\\oint dl=\\frac{\\mu_0 IR^2}{2(x^2+R^2)^{3/2}}",
+          "B_{\\mathrm{centre}}=\\frac{\\mu_0 I}{2R}"
+        ]
+      ],
+      "concise_steps": [
+        "Apply Biot–Savart to a loop element; all elements lie distance sqrt(x²+R²) from axial point.",
+        "Transverse components cancel in opposite pairs; project onto axis.",
+        "Integrate around circumference; set x=0 for centre."
+      ],
+      "final_formula": "B_x=\\frac{\\mu_0 IR^2}{2(x^2+R^2)^{3/2}},\\qquad B_{\\mathrm{centre}}=\\frac{\\mu_0 I}{2R}",
+      "caveats": "§4.6, Eqs. (4.12)–(4.16). Vacuum, thin steady-current loop; multiply by N for tightly wound N-turn coil. Biot–Savart law itself is stated without proof in §4.5, PDF p. 147."
+    },
+    {
+      "title": "Ampère circuital law (stated law)",
+      "source": "NCERT Part I PDF pp. 151",
+      "pdf_pages": "151",
+      "steps": [
+        [
+          "Circulation around a closed path equals permeability times linked signed current.",
+          "\\oint_C\\boldsymbol{B}\\cdot d\\boldsymbol{l}=\\mu_0I_{\\mathrm{enc}}"
+        ],
+        [
+          "When B is tangent and constant along contributing length L, reduce integral.",
+          "BL=\\mu_0I_{\\mathrm{enc}}"
+        ]
+      ],
+      "concise_steps": [
+        "Circulation around a closed path equals permeability times linked signed current.",
+        "When B is tangent and constant along contributing length L, reduce integral."
+      ],
+      "final_formula": "\\oint_C\\boldsymbol{B}\\cdot d\\boldsymbol{l}=\\mu_0I_{\\mathrm{enc}}",
+      "caveats": "§4.7, Eq. (4.17). Basic law stated without proof; textbook applies it for steady currents, with right-hand orientation of path and enclosed current."
+    },
+    {
+      "title": "Magnetic field of an infinitely long straight wire",
+      "source": "NCERT Part I PDF pp. 151–152",
+      "pdf_pages": "151–152",
+      "steps": [
+        [
+          "Choose circular Amperian loop radius r; B is tangent and constant.",
+          "\\oint\\boldsymbol{B}\\cdot d\\boldsymbol{l}=B(2\\pi r)"
+        ],
+        [
+          "Apply Ampère circuital law.",
+          "B(2\\pi r)=\\mu_0 I",
+          "B=\\frac{\\mu_0 I}{2\\pi r}"
+        ]
+      ],
+      "concise_steps": [
+        "Choose circular Amperian loop radius r; B is tangent and constant.",
+        "Apply Ampère circuital law."
+      ],
+      "final_formula": "B(r)=\\frac{\\mu_0 I}{2\\pi r}",
+      "caveats": "§4.7, Eq. (4.18). Infinite thin wire, steady current; Ampère circuital law is introduced as a law, not proved in textbook, PDF p. 151."
+    },
+    {
+      "title": "Field inside and outside a uniformly current-filled wire",
+      "source": "NCERT Part I PDF pp. 153–154",
+      "pdf_pages": "153–154",
+      "steps": [
+        [
+          "Choose concentric loop; uniform current density gives enclosed fraction for r<a.",
+          "I_{\\mathrm{enc}}=I\\frac{\\pi r^2}{\\pi a^2}=I\\frac{r^2}{a^2}"
+        ],
+        [
+          "Use B(2πr)=μ0 I enclosed, with full I for r≥a.",
+          "B(r)=\\begin{cases}\\dfrac{\\mu_0 I r}{2\\pi a^2},&0\\leq r<a\\\\[3pt]\\dfrac{\\mu_0 I}{2\\pi r},&r\\geq a\\end{cases}"
+        ]
+      ],
+      "concise_steps": [
+        "Choose concentric loop; uniform current density gives enclosed fraction for r<a.",
+        "Use B(2πr)=μ0 I enclosed, with full I for r≥a."
+      ],
+      "final_formula": "B_{r<a}=\\frac{\\mu_0 I r}{2\\pi a^2},\\quad B_{r\\geq a}=\\frac{\\mu_0 I}{2\\pi r}",
+      "caveats": "Worked Example 4.8, Eqs. (4.19a,b). Uniform current density and very long solid cylindrical conductor."
+    },
+    {
+      "title": "Magnetic field inside an ideal long solenoid",
+      "source": "NCERT Part I PDF pp. 155–156",
+      "pdf_pages": "155–156",
+      "steps": [
+        [
+          "Use rectangular Amperian loop: outside field negligible, short legs perpendicular.",
+          "\\oint\\boldsymbol{B}\\cdot d\\boldsymbol{l}=Bh"
+        ],
+        [
+          "Count nh enclosed turns each carrying I.",
+          "I_{\\mathrm{enc}}=nhI",
+          "Bh=\\mu_0nhI",
+          "B=\\mu_0nI"
+        ]
+      ],
+      "concise_steps": [
+        "Use rectangular Amperian loop: outside field negligible, short legs perpendicular.",
+        "Count nh enclosed turns each carrying I."
+      ],
+      "final_formula": "B=\\mu_0nI",
+      "caveats": "§4.8.1, Eq. (4.20). Ideal long closely wound solenoid, vacuum/air; end/fringe effects ignored."
+    },
+    {
+      "title": "Field inside an ideal toroid and zero in its hole and exterior",
+      "source": "NCERT Part I PDF pp. 156–157",
+      "pdf_pages": "156–157",
+      "steps": [
+        [
+          "Use concentric circular Amperian paths; hole and exterior have zero net enclosed current.",
+          "B_{\\mathrm{hole}}(2\\pi r)=0,\\qquad B_{\\mathrm{outside}}(2\\pi r)=0"
+        ],
+        [
+          "Within wound core each N turns links the path.",
+          "B(2\\pi r)=\\mu_0NI",
+          "B(r)=\\frac{\\mu_0NI}{2\\pi r}"
+        ],
+        [
+          "At mean radius put n=N/(2πr).",
+          "B=\\mu_0 nI"
+        ]
+      ],
+      "concise_steps": [
+        "Use concentric circular Amperian paths; hole and exterior have zero net enclosed current.",
+        "Within wound core each N turns links the path.",
+        "At mean radius put n=N/(2πr)."
+      ],
+      "final_formula": "B_{\\mathrm{core}}=\\frac{\\mu_0 NI}{2\\pi r},\\quad B_{\\mathrm{hole}}=B_{\\mathrm{outside}}=0",
+      "caveats": "§4.8.2, Eqs. (4.21)–(4.22). Zero exterior assumes ideal closely wound toroid; real helical windings leak field. B varies across core radius for finite thickness."
+    },
+    {
+      "title": "Force per unit length between two parallel current-carrying wires",
+      "source": "NCERT Part I PDF pp. 158–159",
+      "pdf_pages": "158–159",
+      "steps": [
+        [
+          "Field at second wire caused by first at separation d.",
+          "B_a=\\frac{\\mu_0I_a}{2\\pi d}"
+        ],
+        [
+          "Force on length L of the second wire.",
+          "F_{ba}=I_bLB_a=\\frac{\\mu_0I_aI_bL}{2\\pi d}",
+          "\\frac{F}{L}=\\frac{\\mu_0I_aI_b}{2\\pi d}"
+        ]
+      ],
+      "concise_steps": [
+        "Field at second wire caused by first at separation d.",
+        "Force on length L of the second wire."
+      ],
+      "final_formula": "\\frac{F}{L}=\\frac{\\mu_0I_1I_2}{2\\pi d}",
+      "caveats": "§4.9, Eqs. (4.23)–(4.25). Long parallel wires, steady currents in vacuum; co-directed currents attract, opposite directions repel. Historical textbook definition of ampere is not current SI definition."
+    },
+    {
+      "title": "Torque and magnetic moment of a rectangular current loop",
+      "source": "NCERT Part I PDF pp. 161–163",
+      "pdf_pages": "161–163",
+      "steps": [
+        [
+          "Opposite sides of lengths b experience equal and opposite forces.",
+          "F_1=F_2=IbB"
+        ],
+        [
+          "Lever arm between forces is a sin θ, where θ is angle between area normal and B.",
+          "\\tau=(IbB)(a\\sin\\theta)=IAB\\sin\\theta"
+        ],
+        [
+          "For N turns define magnetic dipole moment.",
+          "\\boldsymbol{m}=NI\\boldsymbol{A}",
+          "\\boldsymbol{\\tau}=\\boldsymbol{m}\\times\\boldsymbol{B}"
+        ]
+      ],
+      "concise_steps": [
+        "Opposite sides of lengths b experience equal and opposite forces.",
+        "Lever arm between forces is a sin θ, where θ is angle between area normal and B.",
+        "For N turns define magnetic dipole moment."
+      ],
+      "final_formula": "\\boldsymbol{\\tau}=\\boldsymbol{m}\\times\\boldsymbol{B},\\qquad m=NIA",
+      "caveats": "§4.10.1, Eqs. (4.26)–(4.30). Uniform field, rigid planar coil; net force zero. Text first derives single rectangular loop, generalises to N turns."
+    },
+    {
+      "title": "Far axial field of a circular current loop as magnetic dipole",
+      "source": "NCERT Part I PDF pp. 164–165",
+      "pdf_pages": "164–165",
+      "steps": [
+        [
+          "Start with exact axial field.",
+          "B_x=\\frac{\\mu_0IR^2}{2(x^2+R^2)^{3/2}}"
+        ],
+        [
+          "In far field x≫R, substitute magnetic moment m=IπR².",
+          "B_{\\mathrm{axial}}\\simeq\\frac{\\mu_0 IR^2}{2x^3}=\\frac{\\mu_0}{4\\pi}\\frac{2m}{x^3}"
+        ]
+      ],
+      "concise_steps": [
+        "Start with exact axial field.",
+        "In far field x≫R, substitute magnetic moment m=IπR²."
+      ],
+      "final_formula": "B_{\\mathrm{axial}}\\simeq\\frac{\\mu_0}{4\\pi}\\frac{2m}{x^3}",
+      "caveats": "§4.10.2, Eq. (4.31a). Equatorial formula B≈μ0m/(4πx³) is stated by electrostatic-dipole analogy on PDF p. 165, not independently derived there; valid x≫R."
+    },
+    {
+      "title": "Orbital magnetic moment and Bohr magneton of a revolving electron",
+      "source": "NCERT Part I PDF pp. 166–167",
+      "pdf_pages": "166–167",
+      "steps": [
+        [
+          "Magnitude of circulating conventional current is charge per period.",
+          "T=\\frac{2\\pi r}{v},\\qquad I=\\frac{e}{T}=\\frac{ev}{2\\pi r}"
+        ],
+        [
+          "Multiply by loop area, then identify orbital angular momentum.",
+          "\\mu_l=I\\pi r^2=\\frac{evr}{2}",
+          "l=m_evr",
+          "\\boldsymbol{\\mu}_l=-\\frac{e}{2m_e}\\boldsymbol{l}"
+        ],
+        [
+          "Insert Bohr angular momentum for lowest orbit.",
+          "l=n\\hbar=\\frac{nh}{2\\pi}",
+          "\\mu_B=\\frac{e\\hbar}{2m_e}=\\frac{eh}{4\\pi m_e}"
+        ]
+      ],
+      "concise_steps": [
+        "Magnitude of circulating conventional current is charge per period.",
+        "Multiply by loop area, then identify orbital angular momentum.",
+        "Insert Bohr angular momentum for lowest orbit."
+      ],
+      "final_formula": "\\boldsymbol{\\mu}_l=-\\frac{e}{2m_e}\\boldsymbol{l},\\quad \\mu_B=\\frac{e\\hbar}{2m_e}",
+      "caveats": "§4.10.3, Eqs. (4.32)–(4.37). Semiclassical orbital model; Bohr quantisation is assumed, not derived. Intrinsic spin moment is distinct, not due to literal electron spinning."
+    },
+    {
+      "title": "Moving-coil galvanometer deflection and sensitivities",
+      "source": "NCERT Part I PDF pp. 167–169",
+      "pdf_pages": "167–169",
+      "steps": [
+        [
+          "Radial field keeps torque at maximum at every deflection.",
+          "\\tau_{\\mathrm{mag}}=NIAB"
+        ],
+        [
+          "Balance with spring restoring torque kφ.",
+          "k\\phi=NIAB",
+          "\\phi=\\frac{NAB}{k}I"
+        ],
+        [
+          "Divide deflection by current or coil voltage V=I R_G.",
+          "S_I=\\frac{\\phi}{I}=\\frac{NAB}{k}",
+          "S_V=\\frac{\\phi}{V}=\\frac{NAB}{kR_G}"
+        ]
+      ],
+      "concise_steps": [
+        "Radial field keeps torque at maximum at every deflection.",
+        "Balance with spring restoring torque kφ.",
+        "Divide deflection by current or coil voltage V=I R_G."
+      ],
+      "final_formula": "\\phi=\\frac{NAB}{k}I,\\quad S_I=\\frac{NAB}{k},\\quad S_V=\\frac{NAB}{kR_G}",
+      "caveats": "§4.11, Eqs. (4.38)–(4.40). Text uses R for galvanometer coil resistance in voltage sensitivity. Radial B and linear spring assumed; increasing N may increase coil resistance and not voltage sensitivity."
+    },
+    {
+      "title": "Galvanometer conversion into ammeter and voltmeter",
+      "source": "NCERT Part I PDF pp. 168–169",
+      "pdf_pages": "168–169",
+      "steps": [
+        [
+          "Connect shunt S parallel to galvanometer; same voltage across each branch.",
+          "I_gR_G=(I-I_g)S",
+          "S=\\frac{I_gR_G}{I-I_g}"
+        ],
+        [
+          "Connect series resistor R for target voltage V at full-scale galvanometer current.",
+          "V=I_g(R_G+R)",
+          "R=\\frac{V}{I_g}-R_G"
+        ]
+      ],
+      "concise_steps": [
+        "Connect shunt S parallel to galvanometer; same voltage across each branch.",
+        "Connect series resistor R for target voltage V at full-scale galvanometer current."
+      ],
+      "final_formula": "S=\\frac{I_gR_G}{I-I_g},\\quad R=\\frac{V}{I_g}-R_G",
+      "caveats": "§4.11, Figs. 4.25–4.26. The circuit arrangements and low/high resistance reasoning are explicitly in textbook; these sizing equations follow directly from elementary circuit laws and are not worked out explicitly there. I_g denotes full-scale galvanometer current."
+    }
+  ],
+  "magnetism-matter": [
+    {
+      "title": "Far axial field of finite solenoid and equivalent bar magnet",
+      "source": "NCERT Part I PDF pp. 180–181",
+      "pdf_pages": "180–181",
+      "steps": [
+        [
+          "Treat solenoid length 2l and radius a as circular slices containing n dx turns.",
+          "dB=\\frac{\\mu_0nIa^2\\,dx}{2[(r-x)^2+a^2]^{3/2}}"
+        ],
+        [
+          "Integrate over x from minus l to plus l; in far field denominator approximately r cubed.",
+          "B=\\frac{\\mu_0nIa^2}{2}\\int_{-l}^{l}\\frac{dx}{[(r-x)^2+a^2]^{3/2}}",
+          "B_{\\mathrm{far}}\\simeq\\frac{\\mu_0nIa^2(2l)}{2r^3}"
+        ],
+        [
+          "Express in total coil moment.",
+          "m=(2ln)I\\pi a^2",
+          "B_{\\mathrm{axial}}\\simeq\\frac{\\mu_0}{4\\pi}\\frac{2m}{r^3}"
+        ]
+      ],
+      "concise_steps": [
+        "Treat solenoid length 2l and radius a as circular slices containing n dx turns.",
+        "Integrate over x from minus l to plus l; in far field denominator approximately r cubed.",
+        "Express in total coil moment."
+      ],
+      "final_formula": "B_{\\mathrm{axial}}\\simeq\\frac{\\mu_0}{4\\pi}\\frac{2m}{r^3}",
+      "caveats": "§5.2.2, Eqs. (5.1)–(5.2). Far field r≫l,a. Text does not perform exact finite-solenoid integral. Equivalent bar-magnet field is identified experimentally; magnetic pole-strength approach is explicitly avoided because monopoles do not exist."
+    },
+    {
+      "title": "Oscillation period of a magnetic dipole and field measurement",
+      "source": "NCERT Part I PDF pp. 181–182",
+      "pdf_pages": "181–182",
+      "steps": [
+        [
+          "Restoring magnetic torque and rotational dynamics.",
+          "J\\frac{d^2\\theta}{dt^2}=-mB\\sin\\theta"
+        ],
+        [
+          "Small angle approximation gives simple harmonic motion.",
+          "\\sin\\theta\\simeq\\theta",
+          "\\omega^2=\\frac{mB}{J}"
+        ],
+        [
+          "Read off period and solve for magnetic field.",
+          "T=2\\pi\\sqrt{\\frac{J}{mB}}",
+          "B=\\frac{4\\pi^2J}{mT^2}"
+        ]
+      ],
+      "concise_steps": [
+        "Restoring magnetic torque and rotational dynamics.",
+        "Small angle approximation gives simple harmonic motion.",
+        "Read off period and solve for magnetic field."
+      ],
+      "final_formula": "T=2\\pi\\sqrt{\\frac{J}{mB}},\\quad B=\\frac{4\\pi^2J}{mT^2}",
+      "caveats": "§5.2.3, Eqs. (5.3)–(5.5). J is rotational moment of inertia (PDF symbol fails extraction); small oscillations, uniform B, negligible damping."
+    },
+    {
+      "title": "Potential energy and work to rotate a magnetic dipole",
+      "source": "NCERT Part I PDF pp. 182–183",
+      "pdf_pages": "182–183",
+      "steps": [
+        [
+          "External work opposes restoring torque.",
+          "dU=mB\\sin\\theta\\,d\\theta"
+        ],
+        [
+          "Integrate with zero at perpendicular alignment.",
+          "U(\\theta)=\\int mB\\sin\\theta\\,d\\theta=-mB\\cos\\theta=-\\boldsymbol{m}\\cdot\\boldsymbol{B}"
+        ],
+        [
+          "Difference between unstable anti-parallel and stable parallel orientation.",
+          "W_{0\\to\\pi}=U(\\pi)-U(0)=2mB"
+        ]
+      ],
+      "concise_steps": [
+        "External work opposes restoring torque.",
+        "Integrate with zero at perpendicular alignment.",
+        "Difference between unstable anti-parallel and stable parallel orientation."
+      ],
+      "final_formula": "U=-\\boldsymbol{m}\\cdot\\boldsymbol{B},\\qquad W_{0\\to\\pi}=2mB",
+      "caveats": "§5.2.3, Eq. (5.6) and Example 5.2. Uniform external field; arbitrary additive potential-energy constant set to zero at θ=π/2."
+    },
+    {
+      "title": "Earth magnetic field: horizontal and vertical components",
+      "source": "NCERT Part I PDF pp. 190–191",
+      "pdf_pages": "190–191",
+      "steps": [
+        [
+          "Resolve earth field B_E at inclination/dip I to horizontal.",
+          "H_E=B_E\\cos I",
+          "Z_E=B_E\\sin I"
+        ],
+        [
+          "Divide components and recover total magnitude.",
+          "\\tan I=\\frac{Z_E}{H_E}",
+          "B_E=\\sqrt{H_E^2+Z_E^2}"
+        ]
+      ],
+      "concise_steps": [
+        "Resolve earth field B_E at inclination/dip I to horizontal.",
+        "Divide components and recover total magnitude."
+      ],
+      "final_formula": "\\tan I=\\frac{Z_E}{H_E},\\quad H_E=B_E\\cos I,\\quad Z_E=B_E\\sin I",
+      "caveats": "§5.4, Eq. (5.10a–c). Geometric resolution, not an independent law. Magnetic declination D is a separate azimuthal angle. Do not confuse dip I with current I."
+    },
+    {
+      "title": "Magnetisation, susceptibility and relative permeability relationship",
+      "source": "NCERT Part I PDF pp. 193–194",
+      "pdf_pages": "193–194",
+      "steps": [
+        [
+          "Define moment per material volume and magnetic intensity.",
+          "\\boldsymbol{M}=\\frac{\\boldsymbol{m}_{\\mathrm{net}}}{V}",
+          "\\boldsymbol{H}=\\frac{\\boldsymbol{B}}{\\mu_0}-\\boldsymbol{M}"
+        ],
+        [
+          "For linear isotropic material substitute M=χH.",
+          "\\boldsymbol{M}=\\chi\\boldsymbol{H}",
+          "\\boldsymbol{B}=\\mu_0(\\boldsymbol{H}+\\boldsymbol{M})=\\mu_0(1+\\chi)\\boldsymbol{H}"
+        ],
+        [
+          "Identify material parameters.",
+          "\\mu_r=1+\\chi",
+          "\\mu=\\mu_0\\mu_r"
+        ]
+      ],
+      "concise_steps": [
+        "Define moment per material volume and magnetic intensity.",
+        "For linear isotropic material substitute M=χH.",
+        "Identify material parameters."
+      ],
+      "final_formula": "\\boldsymbol{B}=\\mu_0(\\boldsymbol{H}+\\boldsymbol{M})=\\mu_0\\mu_r\\boldsymbol{H},\\quad \\mu_r=1+\\chi",
+      "caveats": "§5.5, Eqs. (5.11)–(5.19). Algebraic consequence of constitutive definitions, not a microscopic derivation; M=χH assumes linear response. Text states B_m=μ0M without deriving it. Strong ferromagnets can be nonlinear/hysteretic."
+    },
+    {
+      "title": "Magnetic Gauss law and absent monopoles (stated result)",
+      "source": "NCERT Part I PDF pp. 185–186",
+      "pdf_pages": "185–186",
+      "steps": [
+        [
+          "Closed magnetic field lines enter and leave each closed surface in equal flux.",
+          "\\oint_S\\boldsymbol{B}\\cdot d\\boldsymbol{A}=0"
+        ]
+      ],
+      "concise_steps": [
+        "Closed magnetic field lines enter and leave each closed surface in equal flux."
+      ],
+      "final_formula": "\\oint_S\\boldsymbol{B}\\cdot d\\boldsymbol{A}=0",
+      "caveats": "§5.3. Stated/illustrated law, not derived mathematically in textbook; include as foundational exam result rather than present as proof."
+    },
+    {
+      "title": "Far equatorial field of a bar magnet (stated by dipole analogy)",
+      "source": "NCERT Part I PDF pp. 184",
+      "pdf_pages": "184",
+      "steps": [
+        [
+          "Bar magnet is equivalent to a distant magnetic dipole; textbook states equatorial vector result by electrostatic-dipole analogy.",
+          "\\boldsymbol{B}_{\\mathrm{equatorial}}=-\\frac{\\mu_0\\boldsymbol{m}}{4\\pi r^3}"
+        ],
+        [
+          "Compare magnitudes with axial field derived from solenoid.",
+          "B_{\\mathrm{axial}}=2B_{\\mathrm{equatorial}}"
+        ]
+      ],
+      "concise_steps": [
+        "Bar magnet is equivalent to a distant magnetic dipole; textbook states equatorial vector result by electrostatic-dipole analogy.",
+        "Compare magnitudes with axial field derived from solenoid."
+      ],
+      "final_formula": "\\boldsymbol{B}_{\\mathrm{equatorial}}=-\\frac{\\mu_0\\boldsymbol{m}}{4\\pi r^3}",
+      "caveats": "Not independently derived in Chapter 5; §5.2.4 Eqs. (5.7)–(5.8), PDF p. 184. Axial solenoid derivation is PDF pp. 180–181. Far-field dipole approximation r≫magnet size."
+    }
+  ],
+  "electromagnetic-induction": [
+    {
+      "title": "Magnetic flux through a nonuniform surface (definition)",
+      "source": "NCERT Part I PDF pp. 210–211",
+      "pdf_pages": "210–211",
+      "steps": [
+        [
+          "For a small surface patch project its area along local magnetic field.",
+          "d\\Phi_B=\\boldsymbol{B}\\cdot d\\boldsymbol{A}"
+        ],
+        [
+          "Sum patches; for a planar uniform field recover BA cos θ.",
+          "\\Phi_B=\\int_S\\boldsymbol{B}\\cdot d\\boldsymbol{A}",
+          "\\Phi_B=BA\\cos\\theta"
+        ]
+      ],
+      "concise_steps": [
+        "For a small surface patch project its area along local magnetic field.",
+        "Sum patches; for a planar uniform field recover BA cos θ."
+      ],
+      "final_formula": "\\Phi_B=\\int_S\\boldsymbol{B}\\cdot d\\boldsymbol{A}",
+      "caveats": "§6.3, Eqs. (6.1)–(6.2). Definition rather than independently derived law. Surface orientation determines sign; flux unit weber."
+    },
+    {
+      "title": "Faraday law for N turns (stated experimental law)",
+      "source": "NCERT Part I PDF pp. 211–212",
+      "pdf_pages": "211–212",
+      "steps": [
+        [
+          "Flux per turn for uniform field and planar loop.",
+          "\\Phi_B=\\boldsymbol{B}\\cdot\\boldsymbol{A}=BA\\cos\\theta"
+        ],
+        [
+          "Time variation of flux linkage produces emf; sign is Lenz opposition.",
+          "\\mathcal{E}=-N\\frac{d\\Phi_B}{dt}"
+        ]
+      ],
+      "concise_steps": [
+        "Flux per turn for uniform field and planar loop.",
+        "Time variation of flux linkage produces emf; sign is Lenz opposition."
+      ],
+      "final_formula": "\\mathcal{E}=-N\\frac{d\\Phi_B}{dt}",
+      "caveats": "§§6.3–6.4, Eqs. (6.1)–(6.4). Faraday law is empirical, not derived from more primitive laws in this chapter. Flux for nonuniform fields is surface integral. N assumes each turn has same linked flux."
+    },
+    {
+      "title": "Motional emf from changing flux and from magnetic Lorentz force",
+      "source": "NCERT Part I PDF pp. 216–217",
+      "pdf_pages": "216–217",
+      "steps": [
+        [
+          "For sliding length l and loop width x, flux changes as rod moves.",
+          "\\Phi_B=Blx",
+          "\\mathcal{E}=-\\frac{d\\Phi_B}{dt}=-Bl\\frac{dx}{dt}",
+          "|\\mathcal{E}|=Blv"
+        ],
+        [
+          "Alternatively a carrier crossing the rod feels magnetic force and gains work.",
+          "F_B=|q|vB",
+          "W=|q|vBl",
+          "|\\mathcal{E}|=\\frac{W}{|q|}=Blv"
+        ]
+      ],
+      "concise_steps": [
+        "For sliding length l and loop width x, flux changes as rod moves.",
+        "Alternatively a carrier crossing the rod feels magnetic force and gains work."
+      ],
+      "final_formula": "|\\mathcal{E}|=Blv",
+      "caveats": "§6.6, Eq. (6.5). Straight rod perpendicular to both v and B, constant uniform field. Text warns Lorentz work argument is heuristic; magnetic force does no work on a charge, external mechanical work supplies energy."
+    },
+    {
+      "title": "Rotating rod or spoke emf",
+      "source": "NCERT Part I PDF pp. 217–219",
+      "pdf_pages": "217–219",
+      "steps": [
+        [
+          "Speed of a point at radius r along radial rod is ωr.",
+          "v(r)=\\omega r",
+          "d\\mathcal{E}=Bv(r)\\,dr=B\\omega r\\,dr"
+        ],
+        [
+          "Integrate from axle to rim; alternatively differentiate sector flux.",
+          "|\\mathcal{E}|=\\int_0^R B\\omega r\\,dr=\\frac{B\\omega R^2}{2}"
+        ]
+      ],
+      "concise_steps": [
+        "Speed of a point at radius r along radial rod is ωr.",
+        "Integrate from axle to rim; alternatively differentiate sector flux."
+      ],
+      "final_formula": "|\\mathcal{E}|=\\frac{B\\omega R^2}{2}",
+      "caveats": "Worked Examples 6.6–6.7. Uniform axial B, rotation axis through one end; spokes in parallel do not multiply axle-to-rim emf."
+    },
+    {
+      "title": "Magnetic braking and mechanical power converted to Joule heat",
+      "source": "NCERT Part I PDF pp. 219–220",
+      "pdf_pages": "219–220",
+      "steps": [
+        [
+          "Induced current in sliding rod circuit of resistance R.",
+          "|\\mathcal{E}|=Blv",
+          "I=\\frac{Blv}{R}"
+        ],
+        [
+          "Magnetic force opposes rod motion; external force compensates it.",
+          "F=IlB=\\frac{B^2l^2v}{R}"
+        ],
+        [
+          "Mechanical and resistive powers agree.",
+          "P_{\\mathrm{ext}}=Fv=\\frac{B^2l^2v^2}{R}=I^2R=P_{\\mathrm{Joule}}"
+        ]
+      ],
+      "concise_steps": [
+        "Induced current in sliding rod circuit of resistance R.",
+        "Magnetic force opposes rod motion; external force compensates it.",
+        "Mechanical and resistive powers agree."
+      ],
+      "final_formula": "F=\\frac{B^2l^2v}{R},\\quad P_{\\mathrm{ext}}=I^2R=\\frac{B^2l^2v^2}{R}",
+      "caveats": "§6.7, Eqs. (6.7)–(6.8). Text denotes circuit resistance r, here R to avoid confusing radial coordinate; constant speed, negligible rail resistance/friction, neglect self-inductance."
+    },
+    {
+      "title": "Charge passed through circuit during a flux change",
+      "source": "NCERT Part I PDF pp. 220",
+      "pdf_pages": "220",
+      "steps": [
+        [
+          "Apply Faraday and Ohm for fixed resistance R.",
+          "|\\mathcal{E}|=\\left|\\frac{d\\Phi_B}{dt}\\right|",
+          "I=\\frac{|\\mathcal{E}|}{R}"
+        ],
+        [
+          "Integrate current over the flux-change interval.",
+          "Q=\\int I\\,dt=\\frac{|\\Delta\\Phi_B|}{R}"
+        ]
+      ],
+      "concise_steps": [
+        "Apply Faraday and Ohm for fixed resistance R.",
+        "Integrate current over the flux-change interval."
+      ],
+      "final_formula": "Q=\\frac{|\\Delta\\Phi_B|}{R}",
+      "caveats": "§6.7, PDF p. 220. Constant total resistance; single loop; N identical turns would multiply numerator by N. Charge formula uses absolute flux change only for monotonic change."
+    },
+    {
+      "title": "Mutual inductance of two long coaxial solenoids and reciprocity",
+      "source": "NCERT Part I PDF pp. 224–225",
+      "pdf_pages": "224–225",
+      "steps": [
+        [
+          "Outer solenoid S2 produces approximately uniform inner field.",
+          "B_2=\\mu_0n_2I_2",
+          "N_1\\Phi_1=(n_1l)(B_2\\pi r_1^2)=\\mu_0n_1n_2\\pi r_1^2lI_2"
+        ],
+        [
+          "Divide linkage by I2.",
+          "M_{12}=\\frac{N_1\\Phi_1}{I_2}=\\mu_0n_1n_2\\pi r_1^2l"
+        ],
+        [
+          "For reverse direction, field of S1 is confined to inner cross-section.",
+          "N_2\\Phi_2=(n_2l)(\\mu_0n_1I_1\\pi r_1^2)",
+          "M_{21}=M_{12}"
+        ]
+      ],
+      "concise_steps": [
+        "Outer solenoid S2 produces approximately uniform inner field.",
+        "Divide linkage by I2.",
+        "For reverse direction, field of S1 is confined to inner cross-section."
+      ],
+      "final_formula": "M_{12}=M_{21}=\\mu_0n_1n_2\\pi r_1^2l",
+      "caveats": "§6.9.1, Eqs. (6.9)–(6.14). Two long nested coaxial solenoids same length l, r1<r2, neglect edge effects. Equality is shown for this geometry; general reciprocity asserted, not proved. With uniform core multiply by μr."
+    },
+    {
+      "title": "Mutual inductance of two concentric loops of very different radii",
+      "source": "NCERT Part I PDF pp. 225",
+      "pdf_pages": "225",
+      "steps": [
+        [
+          "Outer single loop yields nearly uniform field over small inner loop.",
+          "B_2\\simeq\\frac{\\mu_0I_2}{2r_2}"
+        ],
+        [
+          "Calculate flux and divide by outer current.",
+          "\\Phi_1\\simeq B_2\\pi r_1^2",
+          "M_{12}=\\frac{\\Phi_1}{I_2}=\\frac{\\mu_0\\pi r_1^2}{2r_2}",
+          "M_{21}=M_{12}"
+        ]
+      ],
+      "concise_steps": [
+        "Outer single loop yields nearly uniform field over small inner loop.",
+        "Calculate flux and divide by outer current."
+      ],
+      "final_formula": "M\\simeq\\frac{\\mu_0\\pi r_1^2}{2r_2}",
+      "caveats": "Worked Example 6.9. Single-turn coaxial concentric loops with r1≪r2, vacuum; multiply by N1N2 for identical closely wound multicoils."
+    },
+    {
+      "title": "Mutually induced emf from changing current",
+      "source": "NCERT Part I PDF pp. 226",
+      "pdf_pages": "226",
+      "steps": [
+        [
+          "Flux linkage through coil 1 due to current in coil 2.",
+          "N_1\\Phi_1=M I_2"
+        ],
+        [
+          "Differentiate and apply Faraday sign.",
+          "\\mathcal{E}_1=-\\frac{d(N_1\\Phi_1)}{dt}=-M\\frac{dI_2}{dt}"
+        ]
+      ],
+      "concise_steps": [
+        "Flux linkage through coil 1 due to current in coil 2.",
+        "Differentiate and apply Faraday sign."
+      ],
+      "final_formula": "\\mathcal{E}_1=-M\\frac{dI_2}{dt}",
+      "caveats": "§6.9.1 end. Fixed geometry and time-independent M; textbook derives from its mutual-inductance definition."
+    },
+    {
+      "title": "Self-induced back emf and self-inductance of long solenoid",
+      "source": "NCERT Part I PDF pp. 226–227",
+      "pdf_pages": "226–227",
+      "steps": [
+        [
+          "Define flux linkage and apply Faraday law.",
+          "N\\Phi_B=LI",
+          "\\mathcal{E}_{\\mathrm{self}}=-\\frac{d(N\\Phi_B)}{dt}=-L\\frac{dI}{dt}"
+        ],
+        [
+          "For long solenoid with n turns per length and cross-section A.",
+          "B=\\mu_0nI",
+          "N=nl",
+          "N\\Phi_B=(nl)(\\mu_0nI)A"
+        ],
+        [
+          "Divide by I; insert core permeability if linear.",
+          "L=\\mu_0n^2Al",
+          "L_{\\mathrm{core}}=\\mu_0\\mu_r n^2Al"
+        ]
+      ],
+      "concise_steps": [
+        "Define flux linkage and apply Faraday law.",
+        "For long solenoid with n turns per length and cross-section A.",
+        "Divide by I; insert core permeability if linear."
+      ],
+      "final_formula": "\\mathcal{E}_{\\mathrm{self}}=-L\\frac{dI}{dt},\\quad L=\\mu_0n^2Al",
+      "caveats": "§6.9.2, Eqs. (6.15)–(6.18). Long tightly wound solenoid, negligible fringe field, fixed geometry; core formula assumes constant μr. Minus sign signifies opposition to change, not always negative voltage magnitude."
+    },
+    {
+      "title": "Energy stored in inductor",
+      "source": "NCERT Part I PDF pp. 227",
+      "pdf_pages": "227",
+      "steps": [
+        [
+          "Power supplied against back emf while current increases.",
+          "\\frac{dW}{dt}=I\\left|\\mathcal{E}_{\\mathrm{self}}\\right|=LI\\frac{dI}{dt}"
+        ],
+        [
+          "Integrate from zero current to I.",
+          "W=\\int_0^I LI\\,dI=\\frac{1}{2}LI^2"
+        ]
+      ],
+      "concise_steps": [
+        "Power supplied against back emf while current increases.",
+        "Integrate from zero current to I."
+      ],
+      "final_formula": "U_B=\\frac{1}{2}LI^2",
+      "caveats": "§6.9.2, Eq. (6.19). Constant L; resistance losses excluded when computing stored magnetic energy."
+    },
+    {
+      "title": "Magnetic energy density from long-solenoid energy",
+      "source": "NCERT Part I PDF pp. 228",
+      "pdf_pages": "228",
+      "steps": [
+        [
+          "Use solenoid L and B-to-current conversion.",
+          "L=\\mu_0n^2Al",
+          "I=\\frac{B}{\\mu_0 n}"
+        ],
+        [
+          "Substitute into inductor energy, then divide by solenoid volume.",
+          "U_B=\\frac{1}{2}LI^2=\\frac{B^2Al}{2\\mu_0}",
+          "u_B=\\frac{U_B}{Al}=\\frac{B^2}{2\\mu_0}"
+        ]
+      ],
+      "concise_steps": [
+        "Use solenoid L and B-to-current conversion.",
+        "Substitute into inductor energy, then divide by solenoid volume."
+      ],
+      "final_formula": "u_B=\\frac{B^2}{2\\mu_0}",
+      "caveats": "Worked Example 6.10, Eq. (6.20). Derived using empty/air-cored solenoid; for a linear magnetic medium energy density is BH/2 rather than universally B²/(2μ0). Text compares vacuum electric density ε0E²/2."
+    },
+    {
+      "title": "Alternating emf from uniformly rotating coil generator",
+      "source": "NCERT Part I PDF pp. 228–229",
+      "pdf_pages": "228–229",
+      "steps": [
+        [
+          "A turns with normal at θ=ωt to uniform B; flux per turn.",
+          "\\Phi_B=BA\\cos(\\omega t)"
+        ],
+        [
+          "Differentiate N-turn flux linkage.",
+          "\\mathcal{E}=-N\\frac{d\\Phi_B}{dt}=NBA\\omega\\sin(\\omega t)"
+        ],
+        [
+          "Identify peak emf and rotational frequency.",
+          "\\mathcal{E}_0=NBA\\omega",
+          "\\mathcal{E}(t)=\\mathcal{E}_0\\sin(2\\pi\\nu t)"
+        ]
+      ],
+      "concise_steps": [
+        "A turns with normal at θ=ωt to uniform B; flux per turn.",
+        "Differentiate N-turn flux linkage.",
+        "Identify peak emf and rotational frequency."
+      ],
+      "final_formula": "\\mathcal{E}(t)=NBA\\omega\\sin(\\omega t),\\quad \\mathcal{E}_0=NBA\\omega",
+      "caveats": "§6.10, Eqs. (6.21)–(6.23). Uniform B and constant ω; coil axis perpendicular to B, initial area normal aligned with B. Instantaneous emf, not rms. Generator converts supplied mechanical energy to electrical energy."
+    },
+    {
+      "title": "Lenz direction and energy-conservation argument (stated law)",
+      "source": "NCERT Part I PDF pp. 214",
+      "pdf_pages": "214",
+      "steps": [
+        [
+          "Induced emf polarity opposes the change in linked flux.",
+          "\\mathcal{E}=-\\frac{d\\Phi_B}{dt}"
+        ],
+        [
+          "Approaching north pole is repelled by induced current; external work can dissipate as heat.",
+          "W_{\\mathrm{ext}}\\longrightarrow Q_{\\mathrm{Joule}}"
+        ]
+      ],
+      "concise_steps": [
+        "Induced emf polarity opposes the change in linked flux.",
+        "Approaching north pole is repelled by induced current; external work can dissipate as heat."
+      ],
+      "final_formula": "\\mathcal{E}=-\\frac{d\\Phi_B}{dt}",
+      "caveats": "§6.5. Qualitative conservation argument, not an independent mathematical proof; opening the circuit removes sustained induced current but not induced emf."
+    }
+  ]
+}

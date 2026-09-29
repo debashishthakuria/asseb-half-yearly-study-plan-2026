@@ -6,3 +6,7 @@
 .math-line .katex{font-size:1.1em;white-space:nowrap}
 .derivation-steps{background:var(--tint);border-radius:8px;padding:14px 16px}.derivation-step{padding:8px 0;border-top:1px solid var(--border)}.derivation-step:first-child{border-top:0}.derivation-step p{margin:0 0 9px;color:var(--ink)}.derivation-step .math-line{display:block;font-size:18px;line-height:1.6;padding:5px 0}
 @media(max-width:600px){.equation{font-size:16px;gap:8px 16px}.math-line .katex{font-size:1.06em}.derivation-step .math-line{font-size:16px}}
+/* Individual proofs are separated while each equation scrolls independently on phones. */
+.derivation-entry{padding:16px 0;border-top:1px solid var(--border)}.derivation-entry:first-of-type{border-top:0}.derivation-entry h3{margin:0 0 5px}.derivation-entry .source{margin-bottom:12px}
+@media(max-width:600px){.derivation-steps{padding:10px 12px}}
+.chapter-jump{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:14px 0}.chapter-jump a{display:block;border:1px solid var(--border);border-radius:8px;background:#fff;padding:10px 12px;text-decoration:none;font-weight:600;min-height:44px}@media(max-width:600px){.chapter-jump{grid-template-columns:1fr}}
